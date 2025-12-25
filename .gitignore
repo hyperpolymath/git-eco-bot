@@ -18,10 +18,14 @@ Thumbs.db
 /out/
 
 # Dependencies
-/node_modules/
+node_modules/
+**/node_modules/
 /vendor/
-/deps/
 /.elixir_ls/
+
+# NPM (dev-only, not used in runtime)
+package-lock.json
+**/package-lock.json
 
 # Rust
 # Cargo.lock  # Keep for binaries
@@ -38,8 +42,12 @@ erl_crash.dump
 /Manifest.toml
 
 # ReScript
-/lib/bs/
-/.bsb.lock
+lib/bs/
+**/lib/bs/
+.bsb.lock
+**/.bsb.lock
+.merlin
+**/.merlin
 
 # Python (SaltStack only)
 __pycache__/
