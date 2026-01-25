@@ -37,6 +37,7 @@ Make ecological and economic thinking **first-class** in software development, j
   |              OIKOS BOT                    |
   |  Carbon Analysis | Pareto Optimization    |
   |  Policy Learning | Praxis Loop            |
+  |  Gas Analysis    | Allocative Efficency   |
   +-------------------------------------------+
 ----
 
