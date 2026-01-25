@@ -12,7 +12,7 @@
     (repo "github.com/hyperpolymath/sustainabot"))
 
   (project-context
-    (name "oikos")
+    (name "sustainabot (oikos)")
     (tagline "Ecological & Economic Code Analysis")
     (tech-stack ("Haskell" "OCaml" "Rust" "Deno" "Datalog" "Guix")))
 
