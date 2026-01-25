@@ -10,7 +10,9 @@
     (patterns
       ((code-review . "thorough")
        (refactoring . "conservative")
-       (testing . "comprehensive")))
+       (testing . "comprehensive")
+       (language-style . "Oxford British English")))
     (constraints
-      ((languages . ())
-       (banned . ("typescript" "go" "python" "makefile"))))))
+      ((languages . ("Haskell" "OCaml" "Rust" "ReScript" "Datalog" "Scheme"))
+       (banned . ("typescript" "go" "python" "makefile"))
+       (reasoning-mode . "symbolic-first")))))
