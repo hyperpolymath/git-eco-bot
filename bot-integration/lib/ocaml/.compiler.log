@@ -1,0 +1,4683 @@
+#Start(1770426379061)
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/bindings/Fetch.res:11:44-52
+
+   9 │   @get external status: response => int = "status"
+  10 │   @get external statusText: response => string = "statusText"
+  11 │   @send external json: response => promise<Js.Json.t> = "json"
+  12 │   @send external text: response => promise<string> = "text"
+  13 │ }
+
+  deprecated: Js.Json.t
+  Use `JSON.t` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Types.res:75:24-32
+
+  73 │   priority: priority,
+  74 │   confidence: float,
+  75 │   expectedImprovement: Js.Dict.t<float>,
+  76 │ }
+  77 │ 
+
+  deprecated: Js.Dict.t
+  Use `dict` directly instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Types.res:111:12-20
+
+  109 │   action: option<string>,
+  110 │   repository: repositoryInfo,
+  111 │   payload: Js.Json.t,
+  112 │ }
+  113 │ 
+
+  deprecated: Js.Json.t
+  Use `JSON.t` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/bindings/Deno.res:12:32-40
+
+  10 ┆ @get external url: t => string = "url"
+  11 ┆ @get external method_: t => string = "method"
+  12 ┆ @send external headers: t => Js.Dict.t<string> = "headers"
+  13 ┆ @send external json: t => promise<Js.Json.t> = "json"
+  14 ┆ @send external text: t => promise<string> = "text"
+
+  deprecated: Js.Dict.t
+  Use `dict` directly instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/bindings/Deno.res:13:37-45
+
+  11 │   @get external method_: t => string = "method"
+  12 │   @send external headers: t => Js.Dict.t<string> = "headers"
+  13 │   @send external json: t => promise<Js.Json.t> = "json"
+  14 │   @send external text: t => promise<string> = "text"
+  15 │ }
+
+  deprecated: Js.Json.t
+  Use `JSON.t` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/bindings/Deno.res:53:37-45
+
+  51 ┆ @get external url: request => string = "url"
+  52 ┆ @get external method_: request => string = "method"
+  53 ┆ @get external headers: request => Js.Dict.t<string> = "headers"
+  54 ┆ @send external json: request => promise<Js.Json.t> = "json"
+  55 ┆ @send external text: request => promise<string> = "text"
+
+  deprecated: Js.Dict.t
+  Use `dict` directly instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/bindings/Deno.res:54:43-51
+
+  52 ┆ @get external method_: request => string = "method"
+  53 ┆ @get external headers: request => Js.Dict.t<string> = "headers"
+  54 ┆ @send external json: request => promise<Js.Json.t> = "json"
+  55 ┆ @send external text: request => promise<string> = "text"
+  56 ┆ 
+
+  deprecated: Js.Json.t
+  Use `JSON.t` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/bindings/Deno.res:158:44-52
+
+  156 │   @get external status: response => int = "status"
+  157 │   @get external statusText: response => string = "statusText"
+  158 │   @send external json: response => promise<Js.Json.t> = "json"
+  159 │   @send external text: response => promise<string> = "text"
+  160 │ }
+
+  deprecated: Js.Json.t
+  Use `JSON.t` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:7:17-25
+
+  5 │ 
+  6 │ // Token cache - stores installation tokens to avoid unnecessary API cal
+    │ ls
+  7 │ let tokenCache: Js.Dict.t<Types.installationToken> = Js.Dict.empty()
+  8 │ 
+  9 │ // Convert PEM private key to ArrayBuffer for Web Crypto API
+
+  deprecated: Js.Dict.t
+  Use `dict` directly instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:7:54-66
+
+  5 │ 
+  6 │ // Token cache - stores installation tokens to avoid unnecessary API cal
+    │ ls
+  7 │ let tokenCache: Js.Dict.t<Types.installationToken> = Js.Dict.empty()
+  8 │ 
+  9 │ // Convert PEM private key to ArrayBuffer for Web Crypto API
+
+  deprecated: Js.Dict.empty
+  Use `Dict.make` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:15:7-28
+
+  13 ┆   ->Js.String2.replaceByRe(%re("/-----BEGIN (?:RSA )?PRIVATE KEY-----/g
+     ┆ "), "")
+  14 ┆   ->Js.String2.replaceByRe(%re("/-----END (?:RSA )?PRIVATE KEY-----/g")
+     ┆ , "")
+  15 ┆   ->Js.String2.replaceByRe(%re("/\\s/g"), "")
+  16 ┆ 
+  17 ┆ // Decode base64 to binary string
+
+  deprecated: Js.String2.replaceByRe
+  Use `String.replaceRegExp` instead
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:14:7-28
+
+  12 ┆ let pemContents = pem
+  13 ┆   ->Js.String2.replaceByRe(%re("/-----BEGIN (?:RSA )?PRIVATE KEY-----/g
+     ┆ "), "")
+  14 ┆   ->Js.String2.replaceByRe(%re("/-----END (?:RSA )?PRIVATE KEY-----/g")
+     ┆ , "")
+  15 ┆   ->Js.String2.replaceByRe(%re("/\\s/g"), "")
+  16 ┆ 
+
+  deprecated: Js.String2.replaceByRe
+  Use `String.replaceRegExp` instead
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:13:7-28
+
+  11 ┆ // Remove PEM header/footer and whitespace
+  12 ┆ let pemContents = pem
+  13 ┆   ->Js.String2.replaceByRe(%re("/-----BEGIN (?:RSA )?PRIVATE KEY-----/g
+     ┆ "), "")
+  14 ┆   ->Js.String2.replaceByRe(%re("/-----END (?:RSA )?PRIVATE KEY-----/g")
+     ┆ , "")
+  15 ┆   ->Js.String2.replaceByRe(%re("/\\s/g"), "")
+
+  deprecated: Js.String2.replaceByRe
+  Use `String.replaceRegExp` instead
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:19:13-28
+
+  17 ┆ // Decode base64 to binary string
+  18 ┆ let binaryStr = Base64.atob(pemContents)
+  19 ┆ let len = Js.String.length(binaryStr)
+  20 ┆ 
+  21 ┆ // Convert to Uint8Array
+
+  deprecated: Js.String.length
+  Use `String.length` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:22:15-50
+
+  20 ┆ 
+  21 ┆ // Convert to Uint8Array
+  22 ┆ let bytes = Js.TypedArray2.Uint8Array.fromLength(len)
+  23 ┆ for i in 0 to len - 1 {
+  24 ┆   let charCode = Js.String2.charCodeAt(binaryStr, i)->Belt.Float.toInt
+
+  deprecated: Js.TypedArray2.Uint8Array.fromLength
+  Use `Uint8Array.fromLength` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:24:20-40
+
+  22 ┆ let bytes = Js.TypedArray2.Uint8Array.fromLength(len)
+  23 ┆ for i in 0 to len - 1 {
+  24 ┆   let charCode = Js.String2.charCodeAt(binaryStr, i)->Belt.Float.toInt
+  25 ┆   Js.TypedArray2.Uint8Array.unsafe_set(bytes, i, charCode)
+  26 ┆ }
+
+  deprecated: Js.String2.charCodeAt
+  Use `String.charCodeAt` instead
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:34:13-44
+
+  32 │ let base64UrlEncode = (data: Js.TypedArray2.Uint8Array.t): string => {
+  33 │   // Convert Uint8Array to binary string
+  34 │   let len = Js.TypedArray2.Uint8Array.length(data)
+  35 │   let binaryStr = ref("")
+  36 │   for i in 0 to len - 1 {
+
+  deprecated: Js.TypedArray2.Uint8Array.length
+  Use `TypedArray.length` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:38:40-61
+
+  36 ┆ for i in 0 to len - 1 {
+  37 ┆   let byte = Js.TypedArray2.Uint8Array.unsafe_get(data, i)
+  38 ┆   binaryStr := binaryStr.contents ++ Js.String.fromCharCode(byte)
+  39 ┆ }
+  40 ┆ 
+
+  deprecated: Js.String.fromCharCode
+  Use `String.fromCharCode` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:45:7-28
+
+  43 │     ->Js.String2.replaceByRe(%re("/\+/g"), "-")
+  44 │     ->Js.String2.replaceByRe(%re("/\//g"), "_")
+  45 │     ->Js.String2.replaceByRe(%re("/=+$/g"), "")
+  46 │ }
+  47 │ 
+
+  deprecated: Js.String2.replaceByRe
+  Use `String.replaceRegExp` instead
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:44:7-28
+
+  42 │   Base64.btoa(binaryStr.contents)
+  43 │     ->Js.String2.replaceByRe(%re("/\+/g"), "-")
+  44 │     ->Js.String2.replaceByRe(%re("/\//g"), "_")
+  45 │     ->Js.String2.replaceByRe(%re("/=+$/g"), "")
+  46 │ }
+
+  deprecated: Js.String2.replaceByRe
+  Use `String.replaceRegExp` instead
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:43:7-28
+
+  41 ┆ // Base64 encode then make URL-safe
+  42 ┆ Base64.btoa(binaryStr.contents)
+  43 ┆   ->Js.String2.replaceByRe(%re("/\+/g"), "-")
+  44 ┆   ->Js.String2.replaceByRe(%re("/\//g"), "_")
+  45 ┆   ->Js.String2.replaceByRe(%re("/=+$/g"), "")
+
+  deprecated: Js.String2.replaceByRe
+  Use `String.replaceRegExp` instead
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:53:7-28
+
+  51 │     ->Js.String2.replaceByRe(%re("/\+/g"), "-")
+  52 │     ->Js.String2.replaceByRe(%re("/\//g"), "_")
+  53 │     ->Js.String2.replaceByRe(%re("/=+$/g"), "")
+  54 │ }
+  55 │ 
+
+  deprecated: Js.String2.replaceByRe
+  Use `String.replaceRegExp` instead
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:52:7-28
+
+  50 │   Base64.btoa(str)
+  51 │     ->Js.String2.replaceByRe(%re("/\+/g"), "-")
+  52 │     ->Js.String2.replaceByRe(%re("/\//g"), "_")
+  53 │     ->Js.String2.replaceByRe(%re("/=+$/g"), "")
+  54 │ }
+
+  deprecated: Js.String2.replaceByRe
+  Use `String.replaceRegExp` instead
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:51:7-28
+
+  49 │ let base64UrlEncodeString = (str: string): string => {
+  50 │   Base64.btoa(str)
+  51 │     ->Js.String2.replaceByRe(%re("/\+/g"), "-")
+  52 │     ->Js.String2.replaceByRe(%re("/\//g"), "_")
+  53 │     ->Js.String2.replaceByRe(%re("/=+$/g"), "")
+
+  deprecated: Js.String2.replaceByRe
+  Use `String.replaceRegExp` instead
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:59:20-30
+
+  57 │ // JWT is valid for 10 minutes (GitHub requirement)
+  58 │ let generateJWT = async (appId: string, privateKeyPem: string): result<
+     │ string, string> => {
+  59 │   let nowSeconds = Js.Date.now() /. 1000.0
+  60 │ 
+  61 │   // JWT Header
+
+  deprecated: Js.Date.now
+  Use `Date.now` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:62:16-32
+
+  60 ┆ 
+  61 ┆ // JWT Header
+  62 ┆ let header = Js.Dict.fromArray([
+  63 ┆   ("alg", Js.Json.string("RS256")),
+  64 ┆   ("typ", Js.Json.string("JWT")),
+
+  deprecated: Js.Dict.fromArray
+  Use `Dict.fromArray` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:63:13-26
+
+  61 ┆ // JWT Header
+  62 ┆ let header = Js.Dict.fromArray([
+  63 ┆   ("alg", Js.Json.string("RS256")),
+  64 ┆   ("typ", Js.Json.string("JWT")),
+  65 ┆ ])
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:64:13-26
+
+  62 ┆ let header = Js.Dict.fromArray([
+  63 ┆   ("alg", Js.Json.string("RS256")),
+  64 ┆   ("typ", Js.Json.string("JWT")),
+  65 ┆ ])
+  66 ┆ let headerB64 = base64UrlEncodeString(Js.Json.stringify(Js.Json.object_
+     ┆ (header)))
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:66:41-57
+
+  64 ┆   ("typ", Js.Json.string("JWT")),
+  65 ┆ ])
+  66 ┆ let headerB64 = base64UrlEncodeString(Js.Json.stringify(Js.Json.object_
+     ┆ (header)))
+  67 ┆ 
+  68 ┆ // JWT Payload - issued 60 seconds ago to account for clock drift
+
+  deprecated: Js.Json.stringify
+  Use `JSON.stringify` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:66:59-73
+
+  64 ┆   ("typ", Js.Json.string("JWT")),
+  65 ┆ ])
+  66 ┆ let headerB64 = base64UrlEncodeString(Js.Json.stringify(Js.Json.object_
+     ┆ (header)))
+  67 ┆ 
+  68 ┆ // JWT Payload - issued 60 seconds ago to account for clock drift
+
+  deprecated: Js.Json.object_
+  Use `JSON.Encode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:69:17-33
+
+  67 ┆ 
+  68 ┆ // JWT Payload - issued 60 seconds ago to account for clock drift
+  69 ┆ let payload = Js.Dict.fromArray([
+  70 ┆   ("iss", Js.Json.string(appId)),
+  71 ┆   ("iat", Js.Json.number(nowSeconds -. 60.0)),
+
+  deprecated: Js.Dict.fromArray
+  Use `Dict.fromArray` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:70:13-26
+
+  68 ┆ // JWT Payload - issued 60 seconds ago to account for clock drift
+  69 ┆ let payload = Js.Dict.fromArray([
+  70 ┆   ("iss", Js.Json.string(appId)),
+  71 ┆   ("iat", Js.Json.number(nowSeconds -. 60.0)),
+  72 ┆   ("exp", Js.Json.number(nowSeconds +. 600.0)), // 10 minutes
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:71:13-26
+
+  69 ┆ let payload = Js.Dict.fromArray([
+  70 ┆   ("iss", Js.Json.string(appId)),
+  71 ┆   ("iat", Js.Json.number(nowSeconds -. 60.0)),
+  72 ┆   ("exp", Js.Json.number(nowSeconds +. 600.0)), // 10 minutes
+  73 ┆ ])
+
+  deprecated: Js.Json.number
+  Use `JSON.Encode.float` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:72:13-26
+
+  70 ┆   ("iss", Js.Json.string(appId)),
+  71 ┆   ("iat", Js.Json.number(nowSeconds -. 60.0)),
+  72 ┆   ("exp", Js.Json.number(nowSeconds +. 600.0)), // 10 minutes
+  73 ┆ ])
+  74 ┆ let payloadB64 = base64UrlEncodeString(Js.Json.stringify(Js.Json.object
+     ┆ _(payload)))
+
+  deprecated: Js.Json.number
+  Use `JSON.Encode.float` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:74:42-58
+
+  72 ┆   ("exp", Js.Json.number(nowSeconds +. 600.0)), // 10 minutes
+  73 ┆ ])
+  74 ┆ let payloadB64 = base64UrlEncodeString(Js.Json.stringify(Js.Json.object
+     ┆ _(payload)))
+  75 ┆ 
+  76 ┆ // Message to sign
+
+  deprecated: Js.Json.stringify
+  Use `JSON.stringify` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:74:60-74
+
+  72 ┆   ("exp", Js.Json.number(nowSeconds +. 600.0)), // 10 minutes
+  73 ┆ ])
+  74 ┆ let payloadB64 = base64UrlEncodeString(Js.Json.stringify(Js.Json.object
+     ┆ _(payload)))
+  75 ┆ 
+  76 ┆ // Message to sign
+
+  deprecated: Js.Json.object_
+  Use `JSON.Encode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 44
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:4:1-9
+
+  2 │ // Generates RS256 JWTs for GitHub App authentication and manages instal
+    │ lation tokens
+  3 │ 
+  4 │ open Deno
+  5 │ 
+  6 │ // Token cache - stores installation tokens to avoid unnecessary API cal
+    │ ls
+
+  this open statement shadows the module identifier ArrayBuffer (which is later used)
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:108:22-35
+
+  106 ┆ } catch {
+  107 ┆ | exn =>
+  108 ┆   let msg = switch Js.Exn.asJsExn(exn) {
+  109 ┆   | Some(jsExn) => Js.Exn.message(jsExn)->Belt.Option.getWithDefault("
+      ┆ Unknown error")
+  110 ┆   | None => "Unknown error"
+
+  deprecated: Js.Exn.asJsExn
+  Use `JsExn.fromException` instead
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:109:22-35
+
+  107 ┆ | exn =>
+  108 ┆   let msg = switch Js.Exn.asJsExn(exn) {
+  109 ┆   | Some(jsExn) => Js.Exn.message(jsExn)->Belt.Option.getWithDefault("
+      ┆ Unknown error")
+  110 ┆   | None => "Unknown error"
+  111 ┆   }
+
+  deprecated: Js.Exn.message
+  Use `JsExn.message` instead
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:122:10-20
+
+  120 ┆ 
+  121 ┆ // Check cache first
+  122 ┆ switch Js.Dict.get(tokenCache, cacheKey) {
+  123 ┆ | Some(cached) if cached.expiresAt > Js.Date.now() +. 60000.0 =>
+  124 ┆   // Return cached token if it has at least 1 minute remaining
+
+  deprecated: Js.Dict.get
+  Use `Dict.get` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:123:40-50
+
+  121 ┆ // Check cache first
+  122 ┆ switch Js.Dict.get(tokenCache, cacheKey) {
+  123 ┆ | Some(cached) if cached.expiresAt > Js.Date.now() +. 60000.0 =>
+  124 ┆   // Return cached token if it has at least 1 minute remaining
+  125 ┆   Ok(cached)
+
+  deprecated: Js.Date.now
+  Use `Date.now` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:148:16-35
+
+  146 ┆ } else {
+  147 ┆   let json = await Fetch.json(response)
+  148 ┆   switch Js.Json.decodeObject(json) {
+  149 ┆   | Some(obj) =>
+  150 ┆     let token = switch Js.Dict.get(obj, "token") {
+
+  deprecated: Js.Json.decodeObject
+  Use `JSON.Decode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:150:30-40
+
+  148 ┆ switch Js.Json.decodeObject(json) {
+  149 ┆ | Some(obj) =>
+  150 ┆   let token = switch Js.Dict.get(obj, "token") {
+  151 ┆   | Some(t) => Js.Json.decodeString(t)->Belt.Option.getWithDefault("")
+  152 ┆   | None => ""
+
+  deprecated: Js.Dict.get
+  Use `Dict.get` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:151:24-43
+
+  149 ┆ | Some(obj) =>
+  150 ┆   let token = switch Js.Dict.get(obj, "token") {
+  151 ┆   | Some(t) => Js.Json.decodeString(t)->Belt.Option.getWithDefault("")
+  152 ┆   | None => ""
+  153 ┆   }
+
+  deprecated: Js.Json.decodeString
+  Use `JSON.Decode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:154:37-47
+
+  152 ┆ | None => ""
+  153 ┆ }
+  154 ┆ let expiresAtStr = switch Js.Dict.get(obj, "expires_at") {
+  155 ┆ | Some(e) => Js.Json.decodeString(e)->Belt.Option.getWithDefault("")
+  156 ┆ | None => ""
+
+  deprecated: Js.Dict.get
+  Use `Dict.get` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:155:24-43
+
+  153 ┆ }
+  154 ┆ let expiresAtStr = switch Js.Dict.get(obj, "expires_at") {
+  155 ┆ | Some(e) => Js.Json.decodeString(e)->Belt.Option.getWithDefault("")
+  156 ┆ | None => ""
+  157 ┆ }
+
+  deprecated: Js.Json.decodeString
+  Use `JSON.Decode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:163:33-50
+
+  161 ┆ } else {
+  162 ┆   // Parse ISO 8601 date to timestamp (getTime returns ms since epoch)
+  163 ┆   let expiresAtDate = Js.Date.fromString(expiresAtStr)
+  164 ┆   let expiresAt = Js.Date.getTime(expiresAtDate)
+  165 ┆   let installToken: Types.installationToken = {
+
+  deprecated: Js.Date.fromString
+  Use `Date.fromString` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:164:29-43
+
+  162 ┆ // Parse ISO 8601 date to timestamp (getTime returns ms since epoch)
+  163 ┆ let expiresAtDate = Js.Date.fromString(expiresAtStr)
+  164 ┆ let expiresAt = Js.Date.getTime(expiresAtDate)
+  165 ┆ let installToken: Types.installationToken = {
+  166 ┆   token,
+
+  deprecated: Js.Date.getTime
+  Use `Date.getTime` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:171:13-23
+
+  169 ┆ 
+  170 ┆ // Cache the token
+  171 ┆ Js.Dict.set(tokenCache, cacheKey, installToken)
+  172 ┆ 
+  173 ┆ Ok(installToken)
+
+  deprecated: Js.Dict.set
+  Use `Dict.set` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:180:24-37
+
+  178 ┆ } catch {
+  179 ┆ | exn =>
+  180 ┆   let msg = switch Js.Exn.asJsExn(exn) {
+  181 ┆   | Some(jsExn) => Js.Exn.message(jsExn)->Belt.Option.getWithDefault("
+      ┆ Unknown error")
+  182 ┆   | None => "Unknown error"
+
+  deprecated: Js.Exn.asJsExn
+  Use `JsExn.fromException` instead
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:181:24-37
+
+  179 ┆ | exn =>
+  180 ┆   let msg = switch Js.Exn.asJsExn(exn) {
+  181 ┆   | Some(jsExn) => Js.Exn.message(jsExn)->Belt.Option.getWithDefault("
+      ┆ Unknown error")
+  182 ┆   | None => "Unknown error"
+  183 ┆   }
+
+  deprecated: Js.Exn.message
+  Use `JsExn.message` instead
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:190:39-47
+
+  188 │ 
+  189 │ // Extract installation ID from webhook payload
+  190 │ let extractInstallationId = (payload: Js.Json.t): option<int> => {
+  191 │   switch Js.Json.decodeObject(payload) {
+  192 │   | Some(obj) =>
+
+  deprecated: Js.Json.t
+  Use `JSON.t` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:191:10-29
+
+  189 │ // Extract installation ID from webhook payload
+  190 │ let extractInstallationId = (payload: Js.Json.t): option<int> => {
+  191 │   switch Js.Json.decodeObject(payload) {
+  192 │   | Some(obj) =>
+  193 │     switch Js.Dict.get(obj, "installation") {
+
+  deprecated: Js.Json.decodeObject
+  Use `JSON.Decode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:193:12-22
+
+  191 ┆ switch Js.Json.decodeObject(payload) {
+  192 ┆ | Some(obj) =>
+  193 ┆   switch Js.Dict.get(obj, "installation") {
+  194 ┆   | Some(inst) =>
+  195 ┆     switch Js.Json.decodeObject(inst) {
+
+  deprecated: Js.Dict.get
+  Use `Dict.get` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:195:14-33
+
+  193 ┆ switch Js.Dict.get(obj, "installation") {
+  194 ┆ | Some(inst) =>
+  195 ┆   switch Js.Json.decodeObject(inst) {
+  196 ┆   | Some(instObj) =>
+  197 ┆     switch Js.Dict.get(instObj, "id") {
+
+  deprecated: Js.Json.decodeObject
+  Use `JSON.Decode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:197:16-26
+
+  195 ┆ switch Js.Json.decodeObject(inst) {
+  196 ┆ | Some(instObj) =>
+  197 ┆   switch Js.Dict.get(instObj, "id") {
+  198 ┆   | Some(id) =>
+  199 ┆     switch Js.Json.decodeNumber(id) {
+
+  deprecated: Js.Dict.get
+  Use `Dict.get` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:199:18-37
+
+  197 ┆ switch Js.Dict.get(instObj, "id") {
+  198 ┆ | Some(id) =>
+  199 ┆   switch Js.Json.decodeNumber(id) {
+  200 ┆   | Some(num) => Some(Belt.Float.toInt(num))
+  201 ┆   | None => None
+
+  deprecated: Js.Json.decodeNumber
+  Use `JSON.Decode.float` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubApp.res:215:58-66
+
+  213 │ // Get an authenticated token for a repository installation
+  214 │ // This is the main entry point for authentication
+  215 │ let getAuthToken = async (config: Types.config, payload: Js.Json.t): r
+      │ esult<string, string> => {
+  216 │   switch (config.githubAppId, config.githubPrivateKey) {
+  217 │   | (Some(appId), Some(privateKey)) =>
+
+  deprecated: Js.Json.t
+  Use `JSON.t` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Config.res:31:10-30
+
+  29 │ 
+  30 │ let parseMode = (s: string): botMode => {
+  31 │   switch Js.String.toLowerCase(s) {
+  32 │   | "consultant" => Consultant
+  33 │   | "regulator" => Regulator
+
+  deprecated: Js.String.toLowerCase
+  Use `String.toLowerCase` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/tea/ServerTea.res:31:23-31
+
+  29 ┆ | None
+  30 ┆ | Batch(array<t<'msg>>)
+  31 ┆ | HttpServer(int, Js.Json.t => option<'msg>)
+  32 ┆ | Interval(int, unit => 'msg)
+  33 ┆ 
+
+  deprecated: Js.Json.t
+  Use `JSON.t` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/tea/ServerTea.res:46:30-49
+
+  44 ┆   mutable running: bool,
+  45 ┆   mutable httpServer: option<Deno.HttpServer.t>,
+  46 ┆   mutable intervals: array<Js.Global.intervalId>,
+  47 ┆ }
+  48 ┆ 
+
+  deprecated: Js.Global.intervalId
+  Use `intervalId` directly instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/tea/ServerTea.res:54:15-31
+
+  52 ┆ | Cmd.Batch(cmds) => {
+  53 ┆     // Execute commands sequentially
+  54 ┆     cmds->Js.Array2.forEach(c => {
+  55 ┆       let _ = executeCmd(c, dispatch)
+  56 ┆     })
+
+  deprecated: Js.Array2.forEach
+  Use `Array.forEach` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/tea/ServerTea.res:101:34-50
+
+   99 ┆ switch sub {
+  100 ┆ | Sub.None => ()
+  101 ┆ | Sub.Batch(subs) => subs->Js.Array2.forEach(startSubscription)
+  102 ┆ | Sub.HttpServer(port, handler) => {
+  103 ┆     let server = Deno.serve(
+
+  deprecated: Js.Array2.forEach
+  Use `Array.forEach` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/tea/ServerTea.res:108:22-37
+
+  106 ┆ let body = await Deno.Request.text(req)
+  107 ┆ let json = try {
+  108 ┆   Some(Js.Json.parseExn(body))
+  109 ┆ } catch {
+  110 ┆ | _ => None
+
+  deprecated: Js.Json.parseExn
+  Use `JSON.parseOrThrow` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/tea/ServerTea.res:124:20-40
+
+  122 ┆   }
+  123 ┆ | Sub.Interval(ms, toMsg) => {
+  124 ┆     let id = Js.Global.setInterval(() => dispatch(toMsg()), ms)
+  125 ┆     state.intervals = state.intervals->Js.Array2.concat([id])
+  126 ┆   }
+
+  deprecated: Js.Global.setInterval
+  Use `setInterval` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/tea/ServerTea.res:125:46-61
+
+  123 ┆ | Sub.Interval(ms, toMsg) => {
+  124 ┆     let id = Js.Global.setInterval(() => dispatch(toMsg()), ms)
+  125 ┆     state.intervals = state.intervals->Js.Array2.concat([id])
+  126 ┆   }
+  127 ┆ }
+
+  deprecated: Js.Array2.concat
+  Use `Array.concat` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/tea/ServerTea.res:144:26-42
+
+  142 ┆     state.running = false
+  143 ┆     state.httpServer->Belt.Option.forEach(server => { let _ = Deno.Htt
+      ┆ pServer.shutdown(server) })
+  144 ┆     state.intervals->Js.Array2.forEach(Js.Global.clearInterval)
+  145 ┆   },
+  146 ┆ }
+
+  deprecated: Js.Array2.forEach
+  Use `Array.forEach` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/tea/ServerTea.res:144:44-66
+
+  142 ┆     state.running = false
+  143 ┆     state.httpServer->Belt.Option.forEach(server => { let _ = Deno.Htt
+      ┆ pServer.shutdown(server) })
+  144 ┆     state.intervals->Js.Array2.forEach(Js.Global.clearInterval)
+  145 ┆   },
+  146 ┆ }
+
+  deprecated: Js.Global.clearInterval
+  Use `clearInterval` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Webhook.res:35:12-20
+
+  33 │ 
+  34 │ let parseGitHubEvent = (
+  35 │   headers: Js.Dict.t<string>,
+  36 │   payload: Js.Json.t,
+  37 │ ): option<Types.webhookEvent> => {
+
+  deprecated: Js.Dict.t
+  Use `dict` directly instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Webhook.res:36:12-20
+
+  34 │ let parseGitHubEvent = (
+  35 │   headers: Js.Dict.t<string>,
+  36 │   payload: Js.Json.t,
+  37 │ ): option<Types.webhookEvent> => {
+  38 │   let eventType = Js.Dict.get(headers, "x-github-event")
+
+  deprecated: Js.Json.t
+  Use `JSON.t` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Webhook.res:38:19-29
+
+  36 │   payload: Js.Json.t,
+  37 │ ): option<Types.webhookEvent> => {
+  38 │   let eventType = Js.Dict.get(headers, "x-github-event")
+  39 │   let action = switch Js.Json.decodeObject(payload) {
+  40 │   | Some(obj) =>
+
+  deprecated: Js.Dict.get
+  Use `Dict.get` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Webhook.res:39:23-42
+
+  37 │ ): option<Types.webhookEvent> => {
+  38 │   let eventType = Js.Dict.get(headers, "x-github-event")
+  39 │   let action = switch Js.Json.decodeObject(payload) {
+  40 │   | Some(obj) =>
+  41 │     switch Js.Dict.get(obj, "action") {
+
+  deprecated: Js.Json.decodeObject
+  Use `JSON.Decode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Webhook.res:41:12-22
+
+  39 ┆ let action = switch Js.Json.decodeObject(payload) {
+  40 ┆ | Some(obj) =>
+  41 ┆   switch Js.Dict.get(obj, "action") {
+  42 ┆   | Some(a) => Js.Json.decodeString(a)
+  43 ┆   | None => None
+
+  deprecated: Js.Dict.get
+  Use `Dict.get` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Webhook.res:42:18-37
+
+  40 ┆ | Some(obj) =>
+  41 ┆   switch Js.Dict.get(obj, "action") {
+  42 ┆   | Some(a) => Js.Json.decodeString(a)
+  43 ┆   | None => None
+  44 ┆   }
+
+  deprecated: Js.Json.decodeString
+  Use `JSON.Decode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Webhook.res:51:23-42
+
+  49 ┆ | Some(et) =>
+  50 ┆   // Extract repository info
+  51 ┆   let repo = switch Js.Json.decodeObject(payload) {
+  52 ┆   | Some(obj) =>
+  53 ┆     switch Js.Dict.get(obj, "repository") {
+
+  deprecated: Js.Json.decodeObject
+  Use `JSON.Decode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Webhook.res:53:14-24
+
+  51 ┆ let repo = switch Js.Json.decodeObject(payload) {
+  52 ┆ | Some(obj) =>
+  53 ┆   switch Js.Dict.get(obj, "repository") {
+  54 ┆   | Some(r) =>
+  55 ┆     switch Js.Json.decodeObject(r) {
+
+  deprecated: Js.Dict.get
+  Use `Dict.get` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Webhook.res:55:16-35
+
+  53 ┆ switch Js.Dict.get(obj, "repository") {
+  54 ┆ | Some(r) =>
+  55 ┆   switch Js.Json.decodeObject(r) {
+  56 ┆   | Some(repoObj) => {
+  57 ┆       let owner = switch Js.Dict.get(repoObj, "owner") {
+
+  deprecated: Js.Json.decodeObject
+  Use `JSON.Decode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Webhook.res:57:32-42
+
+  55 ┆ switch Js.Json.decodeObject(r) {
+  56 ┆ | Some(repoObj) => {
+  57 ┆     let owner = switch Js.Dict.get(repoObj, "owner") {
+  58 ┆     | Some(o) =>
+  59 ┆       switch Js.Json.decodeObject(o) {
+
+  deprecated: Js.Dict.get
+  Use `Dict.get` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Webhook.res:59:22-41
+
+  57 ┆ let owner = switch Js.Dict.get(repoObj, "owner") {
+  58 ┆ | Some(o) =>
+  59 ┆   switch Js.Json.decodeObject(o) {
+  60 ┆   | Some(ownerObj) =>
+  61 ┆     switch Js.Dict.get(ownerObj, "login") {
+
+  deprecated: Js.Json.decodeObject
+  Use `JSON.Decode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Webhook.res:61:24-34
+
+  59 ┆ switch Js.Json.decodeObject(o) {
+  60 ┆ | Some(ownerObj) =>
+  61 ┆   switch Js.Dict.get(ownerObj, "login") {
+  62 ┆   | Some(l) => Js.Json.decodeString(l)->Belt.Option.getWithDefault("")
+  63 ┆   | None => ""
+
+  deprecated: Js.Dict.get
+  Use `Dict.get` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Webhook.res:62:30-49
+
+  60 ┆ | Some(ownerObj) =>
+  61 ┆   switch Js.Dict.get(ownerObj, "login") {
+  62 ┆   | Some(l) => Js.Json.decodeString(l)->Belt.Option.getWithDefault("")
+  63 ┆   | None => ""
+  64 ┆   }
+
+  deprecated: Js.Json.decodeString
+  Use `JSON.Decode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Webhook.res:69:31-41
+
+  67 ┆ | None => ""
+  68 ┆ }
+  69 ┆ let name = switch Js.Dict.get(repoObj, "name") {
+  70 ┆ | Some(n) => Js.Json.decodeString(n)->Belt.Option.getWithDefault("")
+  71 ┆ | None => ""
+
+  deprecated: Js.Dict.get
+  Use `Dict.get` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Webhook.res:70:26-45
+
+  68 ┆ }
+  69 ┆ let name = switch Js.Dict.get(repoObj, "name") {
+  70 ┆ | Some(n) => Js.Json.decodeString(n)->Belt.Option.getWithDefault("")
+  71 ┆ | None => ""
+  72 ┆ }
+
+  deprecated: Js.Json.decodeString
+  Use `JSON.Decode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Webhook.res:73:30-40
+
+  71 ┆ | None => ""
+  72 ┆ }
+  73 ┆ let url = switch Js.Dict.get(repoObj, "html_url") {
+  74 ┆ | Some(u) => Js.Json.decodeString(u)->Belt.Option.getWithDefault("")
+  75 ┆ | None => ""
+
+  deprecated: Js.Dict.get
+  Use `Dict.get` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Webhook.res:74:26-45
+
+  72 ┆ }
+  73 ┆ let url = switch Js.Dict.get(repoObj, "html_url") {
+  74 ┆ | Some(u) => Js.Json.decodeString(u)->Belt.Option.getWithDefault("")
+  75 ┆ | None => ""
+  76 ┆ }
+
+  deprecated: Js.Json.decodeString
+  Use `JSON.Decode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Webhook.res:102:12-20
+
+  100 │ 
+  101 │ let parseGitLabEvent = (
+  102 │   headers: Js.Dict.t<string>,
+  103 │   payload: Js.Json.t,
+  104 │ ): option<Types.webhookEvent> => {
+
+  deprecated: Js.Dict.t
+  Use `dict` directly instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Webhook.res:103:12-20
+
+  101 │ let parseGitLabEvent = (
+  102 │   headers: Js.Dict.t<string>,
+  103 │   payload: Js.Json.t,
+  104 │ ): option<Types.webhookEvent> => {
+  105 │   let eventType = Js.Dict.get(headers, "x-gitlab-event")
+
+  deprecated: Js.Json.t
+  Use `JSON.t` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Webhook.res:105:19-29
+
+  103 │   payload: Js.Json.t,
+  104 │ ): option<Types.webhookEvent> => {
+  105 │   let eventType = Js.Dict.get(headers, "x-gitlab-event")
+  106 │ 
+  107 │   switch eventType {
+
+  deprecated: Js.Dict.get
+  Use `Dict.get` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Webhook.res:110:23-42
+
+  108 ┆ | Some(et) =>
+  109 ┆   // Extract project info
+  110 ┆   let repo = switch Js.Json.decodeObject(payload) {
+  111 ┆   | Some(obj) =>
+  112 ┆     switch Js.Dict.get(obj, "project") {
+
+  deprecated: Js.Json.decodeObject
+  Use `JSON.Decode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Webhook.res:112:14-24
+
+  110 ┆ let repo = switch Js.Json.decodeObject(payload) {
+  111 ┆ | Some(obj) =>
+  112 ┆   switch Js.Dict.get(obj, "project") {
+  113 ┆   | Some(p) =>
+  114 ┆     switch Js.Json.decodeObject(p) {
+
+  deprecated: Js.Dict.get
+  Use `Dict.get` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Webhook.res:114:16-35
+
+  112 ┆ switch Js.Dict.get(obj, "project") {
+  113 ┆ | Some(p) =>
+  114 ┆   switch Js.Json.decodeObject(p) {
+  115 ┆   | Some(projObj) => {
+  116 ┆       let namespace = switch Js.Dict.get(projObj, "namespace") {
+
+  deprecated: Js.Json.decodeObject
+  Use `JSON.Decode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Webhook.res:116:36-46
+
+  114 ┆ switch Js.Json.decodeObject(p) {
+  115 ┆ | Some(projObj) => {
+  116 ┆     let namespace = switch Js.Dict.get(projObj, "namespace") {
+  117 ┆     | Some(n) => Js.Json.decodeString(n)->Belt.Option.getWithDefault("
+      ┆ ")
+  118 ┆     | None => ""
+
+  deprecated: Js.Dict.get
+  Use `Dict.get` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Webhook.res:117:26-45
+
+  115 ┆ | Some(projObj) => {
+  116 ┆     let namespace = switch Js.Dict.get(projObj, "namespace") {
+  117 ┆     | Some(n) => Js.Json.decodeString(n)->Belt.Option.getWithDefault("
+      ┆ ")
+  118 ┆     | None => ""
+  119 ┆     }
+
+  deprecated: Js.Json.decodeString
+  Use `JSON.Decode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Webhook.res:120:31-41
+
+  118 ┆ | None => ""
+  119 ┆ }
+  120 ┆ let name = switch Js.Dict.get(projObj, "name") {
+  121 ┆ | Some(n) => Js.Json.decodeString(n)->Belt.Option.getWithDefault("")
+  122 ┆ | None => ""
+
+  deprecated: Js.Dict.get
+  Use `Dict.get` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Webhook.res:121:26-45
+
+  119 ┆ }
+  120 ┆ let name = switch Js.Dict.get(projObj, "name") {
+  121 ┆ | Some(n) => Js.Json.decodeString(n)->Belt.Option.getWithDefault("")
+  122 ┆ | None => ""
+  123 ┆ }
+
+  deprecated: Js.Json.decodeString
+  Use `JSON.Decode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Webhook.res:124:30-40
+
+  122 ┆ | None => ""
+  123 ┆ }
+  124 ┆ let url = switch Js.Dict.get(projObj, "web_url") {
+  125 ┆ | Some(u) => Js.Json.decodeString(u)->Belt.Option.getWithDefault("")
+  126 ┆ | None => ""
+
+  deprecated: Js.Dict.get
+  Use `Dict.get` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Webhook.res:125:26-45
+
+  123 ┆ }
+  124 ┆ let url = switch Js.Dict.get(projObj, "web_url") {
+  125 ┆ | Some(u) => Js.Json.decodeString(u)->Belt.Option.getWithDefault("")
+  126 ┆ | None => ""
+  127 ┆ }
+
+  deprecated: Js.Json.decodeString
+  Use `JSON.Decode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Router.res:57:57-65
+
+  55 │ 
+  56 │ // Path matching with named parameters
+  57 │ let matchPath = (pattern: string, path: string): option<Js.Dict.t<strin
+     │ g>> => {
+  58 │   let patternParts = pattern->Js.String2.split("/")->Js.Array2.filter(p
+     │  => p !== "")
+  59 │   let pathParts = path->Js.String2.split("/")->Js.Array2.filter(p => p 
+     │ !== "")
+
+  deprecated: Js.Dict.t
+  Use `dict` directly instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Router.res:58:54-69
+
+  56 │ // Path matching with named parameters
+  57 │ let matchPath = (pattern: string, path: string): option<Js.Dict.t<strin
+     │ g>> => {
+  58 │   let patternParts = pattern->Js.String2.split("/")->Js.Array2.filter(p
+     │  => p !== "")
+  59 │   let pathParts = path->Js.String2.split("/")->Js.Array2.filter(p => p 
+     │ !== "")
+  60 │ 
+
+  deprecated: Js.Array2.filter
+  Use `Array.filter` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Router.res:58:31-46
+
+  56 │ // Path matching with named parameters
+  57 │ let matchPath = (pattern: string, path: string): option<Js.Dict.t<strin
+     │ g>> => {
+  58 │   let patternParts = pattern->Js.String2.split("/")->Js.Array2.filter(p
+     │  => p !== "")
+  59 │   let pathParts = path->Js.String2.split("/")->Js.Array2.filter(p => p 
+     │ !== "")
+  60 │ 
+
+  deprecated: Js.String2.split
+  Use `String.split` instead
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Router.res:59:48-63
+
+  57 │ let matchPath = (pattern: string, path: string): option<Js.Dict.t<strin
+     │ g>> => {
+  58 │   let patternParts = pattern->Js.String2.split("/")->Js.Array2.filter(p
+     │  => p !== "")
+  59 │   let pathParts = path->Js.String2.split("/")->Js.Array2.filter(p => p 
+     │ !== "")
+  60 │ 
+  61 │   if Js.Array2.length(patternParts) !== Js.Array2.length(pathParts) {
+
+  deprecated: Js.Array2.filter
+  Use `Array.filter` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Router.res:59:25-40
+
+  57 │ let matchPath = (pattern: string, path: string): option<Js.Dict.t<strin
+     │ g>> => {
+  58 │   let patternParts = pattern->Js.String2.split("/")->Js.Array2.filter(p
+     │  => p !== "")
+  59 │   let pathParts = path->Js.String2.split("/")->Js.Array2.filter(p => p 
+     │ !== "")
+  60 │ 
+  61 │   if Js.Array2.length(patternParts) !== Js.Array2.length(pathParts) {
+
+  deprecated: Js.String2.split
+  Use `String.split` instead
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Router.res:61:6-21
+
+  59 ┆ let pathParts = path->Js.String2.split("/")->Js.Array2.filter(p => p !=
+     ┆ = "")
+  60 ┆ 
+  61 ┆ if Js.Array2.length(patternParts) !== Js.Array2.length(pathParts) {
+  62 ┆   None
+  63 ┆ } else {
+
+  deprecated: Js.Array2.length
+  Use `Array.length` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Router.res:61:41-56
+
+  59 ┆ let pathParts = path->Js.String2.split("/")->Js.Array2.filter(p => p !=
+     ┆ = "")
+  60 ┆ 
+  61 ┆ if Js.Array2.length(patternParts) !== Js.Array2.length(pathParts) {
+  62 ┆   None
+  63 ┆ } else {
+
+  deprecated: Js.Array2.length
+  Use `Array.length` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Router.res:64:18-30
+
+  62 ┆   None
+  63 ┆ } else {
+  64 ┆   let params = Js.Dict.empty()
+  65 ┆   let matches = ref(true)
+  66 ┆ 
+
+  deprecated: Js.Dict.empty
+  Use `Dict.make` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Router.res:67:19-36
+
+  65 ┆ let matches = ref(true)
+  66 ┆ 
+  67 ┆ patternParts->Js.Array2.forEachi((patternPart, i) => {
+  68 ┆   let pathPart = pathParts->Js.Array2.unsafe_get(i)
+  69 ┆ 
+
+  deprecated: Js.Array2.forEachi
+  Use `Array.forEachWithIndex` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Router.res:68:33-52
+
+  66 ┆ 
+  67 ┆ patternParts->Js.Array2.forEachi((patternPart, i) => {
+  68 ┆   let pathPart = pathParts->Js.Array2.unsafe_get(i)
+  69 ┆ 
+  70 ┆   if Js.String2.startsWith(patternPart, ":") {
+
+  deprecated: Js.Array2.unsafe_get
+  Use `Array.getUnsafe` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Router.res:70:10-30
+
+  68 ┆ let pathPart = pathParts->Js.Array2.unsafe_get(i)
+  69 ┆ 
+  70 ┆ if Js.String2.startsWith(patternPart, ":") {
+  71 ┆   let paramName = Js.String2.sliceToEnd(patternPart, ~from=1)
+  72 ┆   Js.Dict.set(params, paramName, pathPart)
+
+  deprecated: Js.String2.startsWith
+  Use `String.startsWith` instead
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Router.res:71:25-45
+
+  69 ┆ 
+  70 ┆ if Js.String2.startsWith(patternPart, ":") {
+  71 ┆   let paramName = Js.String2.sliceToEnd(patternPart, ~from=1)
+  72 ┆   Js.Dict.set(params, paramName, pathPart)
+  73 ┆ } else if patternPart !== pathPart {
+
+  deprecated: Js.String2.sliceToEnd
+  Use `String.slice` instead
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Router.res:72:9-19
+
+  70 ┆ if Js.String2.startsWith(patternPart, ":") {
+  71 ┆   let paramName = Js.String2.sliceToEnd(patternPart, ~from=1)
+  72 ┆   Js.Dict.set(params, paramName, pathPart)
+  73 ┆ } else if patternPart !== pathPart {
+  74 ┆   matches := false
+
+  deprecated: Js.Dict.set
+  Use `Dict.set` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Router.res:89:38-53
+
+  87 │ let addRoute = (router: t, method: method, path: string, handler: handl
+     │ er): t => {
+  88 │   let newRoute = {method, path, handler}
+  89 │   {...router, routes: router.routes->Js.Array2.concat([newRoute])}
+  90 │ }
+  91 │ 
+
+  deprecated: Js.Array2.concat
+  Use `Array.concat` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Router.res:119:48-63
+
+  117 │ // Add middleware
+  118 │ let use = (router: t, middleware: middleware): t => {
+  119 │   {...router, middlewares: router.middlewares->Js.Array2.concat([middl
+      │ eware])}
+  120 │ }
+  121 │ 
+
+  deprecated: Js.Array2.concat
+  Use `Array.concat` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Router.res:149:22-38
+
+  147 ┆ let matchingRoute = ref(None)
+  148 ┆ 
+  149 ┆ router.routes->Js.Array2.forEach(route => {
+  150 ┆   if route.method === m {
+  151 ┆     switch matchPath(route.path, path) {
+
+  deprecated: Js.Array2.forEach
+  Use `Array.forEach` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Router.res:170:52-72
+
+  168 ┆ let finalHandler = () => route.handler(req)
+  169 ┆ 
+  170 ┆ let wrappedHandler = router.middlewares->Js.Array2.reduceRight(
+  171 ┆   (next, middleware) => {
+  172 ┆     () => middleware(req, next)
+
+  deprecated: Js.Array2.reduceRight
+  Use `Array.reduceRight` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Analysis.res:10:14-28
+
+   8 │   string,
+   9 │ > => {
+  10 │   let body = Js.Json.object_(
+  11 │     Js.Dict.fromArray([("url", Js.Json.string(repoUrl)), ("ref", Js.Jso
+     │ n.string(ref))]),
+  12 │   )
+
+  deprecated: Js.Json.object_
+  Use `JSON.Encode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Analysis.res:11:5-21
+
+   9 │ > => {
+  10 │   let body = Js.Json.object_(
+  11 │     Js.Dict.fromArray([("url", Js.Json.string(repoUrl)), ("ref", Js.Jso
+     │ n.string(ref))]),
+  12 │   )
+  13 │ 
+
+  deprecated: Js.Dict.fromArray
+  Use `Dict.fromArray` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Analysis.res:11:32-45
+
+   9 │ > => {
+  10 │   let body = Js.Json.object_(
+  11 │     Js.Dict.fromArray([("url", Js.Json.string(repoUrl)), ("ref", Js.Jso
+     │ n.string(ref))]),
+  12 │   )
+  13 │ 
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Analysis.res:11:66-79
+
+   9 │ > => {
+  10 │   let body = Js.Json.object_(
+  11 │     Js.Dict.fromArray([("url", Js.Json.string(repoUrl)), ("ref", Js.Jso
+     │ n.string(ref))]),
+  12 │   )
+  13 │ 
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Analysis.res:20:17-33
+
+  18 ┆     "method": "POST",
+  19 ┆     "headers": {"Content-Type": "application/json"},
+  20 ┆     "body": Js.Json.stringify(body),
+  21 ┆   },
+  22 ┆ )
+
+  deprecated: Js.Json.stringify
+  Use `JSON.stringify` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Analysis.res:32:5-19
+
+  30 ┆   }
+  31 ┆ } catch {
+  32 ┆ | Js.Exn.Error(e) =>
+  33 ┆   Error(`Analysis request failed: ${Js.Exn.message(e)->Belt.Option.getW
+     ┆ ithDefault("unknown")}`)
+  34 ┆ }
+
+  deprecated: Error
+  Use `JsExn` instead
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Analysis.res:33:39-52
+
+  31 │   } catch {
+  32 │   | Js.Exn.Error(e) =>
+  33 │     Error(`Analysis request failed: ${Js.Exn.message(e)->Belt.Option.ge
+     │ tWithDefault("unknown")}`)
+  34 │   }
+  35 │ }
+
+  deprecated: Js.Exn.message
+  Use `JsExn.message` instead
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Analysis.res:43:14-28
+
+  41 │   head: string,
+  42 │ ): result<analysisResult, string> => {
+  43 │   let body = Js.Json.object_(
+  44 │     Js.Dict.fromArray([
+  45 │       ("url", Js.Json.string(repoUrl)),
+
+  deprecated: Js.Json.object_
+  Use `JSON.Encode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Analysis.res:44:5-21
+
+  42 │ ): result<analysisResult, string> => {
+  43 │   let body = Js.Json.object_(
+  44 │     Js.Dict.fromArray([
+  45 │       ("url", Js.Json.string(repoUrl)),
+  46 │       ("base", Js.Json.string(base)),
+
+  deprecated: Js.Dict.fromArray
+  Use `Dict.fromArray` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Analysis.res:45:15-28
+
+  43 ┆ let body = Js.Json.object_(
+  44 ┆   Js.Dict.fromArray([
+  45 ┆     ("url", Js.Json.string(repoUrl)),
+  46 ┆     ("base", Js.Json.string(base)),
+  47 ┆     ("head", Js.Json.string(head)),
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Analysis.res:46:16-29
+
+  44 ┆ Js.Dict.fromArray([
+  45 ┆   ("url", Js.Json.string(repoUrl)),
+  46 ┆   ("base", Js.Json.string(base)),
+  47 ┆   ("head", Js.Json.string(head)),
+  48 ┆ ]),
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Analysis.res:47:16-29
+
+  45 ┆     ("url", Js.Json.string(repoUrl)),
+  46 ┆     ("base", Js.Json.string(base)),
+  47 ┆     ("head", Js.Json.string(head)),
+  48 ┆   ]),
+  49 ┆ )
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Analysis.res:57:17-33
+
+  55 ┆     "method": "POST",
+  56 ┆     "headers": {"Content-Type": "application/json"},
+  57 ┆     "body": Js.Json.stringify(body),
+  58 ┆   },
+  59 ┆ )
+
+  deprecated: Js.Json.stringify
+  Use `JSON.stringify` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Analysis.res:68:5-19
+
+  66 ┆   }
+  67 ┆ } catch {
+  68 ┆ | Js.Exn.Error(e) =>
+  69 ┆   Error(`Analysis request failed: ${Js.Exn.message(e)->Belt.Option.getW
+     ┆ ithDefault("unknown")}`)
+  70 ┆ }
+
+  deprecated: Error
+  Use `JsExn` instead
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Analysis.res:69:39-52
+
+  67 │   } catch {
+  68 │   | Js.Exn.Error(e) =>
+  69 │     Error(`Analysis request failed: ${Js.Exn.message(e)->Belt.Option.ge
+     │ tWithDefault("unknown")}`)
+  70 │   }
+  71 │ }
+
+  deprecated: Js.Exn.message
+  Use `JsExn.message` instead
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Analysis.res:114:30-46
+
+  112 ┆     priority: PriorityMedium,
+  113 ┆     confidence: 0.78,
+  114 ┆     expectedImprovement: Js.Dict.fromArray([("carbonScore", 5.0), ("en
+      ┆ ergyScore", 8.0)]),
+  115 ┆   },
+  116 ┆ ],
+
+  deprecated: Js.Dict.fromArray
+  Use `Dict.fromArray` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubAPI.res:14:17-25
+
+  12 │   method: string,
+  13 │   endpoint: string,
+  14 │   ~body: option<Js.Json.t>=?,
+  15 │ ): result<Js.Json.t, string> => {
+  16 │   let url = `https://api.github.com${endpoint}`
+
+  deprecated: Js.Json.t
+  Use `JSON.t` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubAPI.res:15:11-19
+
+  13 │   endpoint: string,
+  14 │   ~body: option<Js.Json.t>=?,
+  15 │ ): result<Js.Json.t, string> => {
+  16 │   let url = `https://api.github.com${endpoint}`
+  17 │ 
+
+  deprecated: Js.Json.t
+  Use `JSON.t` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubAPI.res:34:19-35
+
+  32 ┆     "method": method,
+  33 ┆     "headers": headers,
+  34 ┆     "body": Js.Json.stringify(b),
+  35 ┆   },
+  36 ┆ )
+
+  deprecated: Js.Json.stringify
+  Use `JSON.stringify` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubAPI.res:57:22-35
+
+  55 ┆ } catch {
+  56 ┆ | exn =>
+  57 ┆   let msg = switch Js.Exn.asJsExn(exn) {
+  58 ┆   | Some(jsExn) => Js.Exn.message(jsExn)->Belt.Option.getWithDefault("U
+     ┆ nknown error")
+  59 ┆   | None => "Unknown error"
+
+  deprecated: Js.Exn.asJsExn
+  Use `JsExn.fromException` instead
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubAPI.res:58:22-35
+
+  56 ┆ | exn =>
+  57 ┆   let msg = switch Js.Exn.asJsExn(exn) {
+  58 ┆   | Some(jsExn) => Js.Exn.message(jsExn)->Belt.Option.getWithDefault("U
+     ┆ nknown error")
+  59 ┆   | None => "Unknown error"
+  60 ┆   }
+
+  deprecated: Js.Exn.message
+  Use `JsExn.message` instead
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubAPI.res:74:17-31
+
+  72 │ ): result<int, string> => {
+  73 │   let endpoint = `/repos/${owner}/${repo}/issues/${Belt.Int.toString(pr
+     │ Number)}/comments`
+  74 │   let payload = Js.Json.object_(Js.Dict.fromArray([("body", Js.Json.str
+     │ ing(body))]))
+  75 │ 
+  76 │   let result = await apiRequest(token, "POST", endpoint, ~body=payload)
+
+  deprecated: Js.Json.object_
+  Use `JSON.Encode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubAPI.res:74:33-49
+
+  72 │ ): result<int, string> => {
+  73 │   let endpoint = `/repos/${owner}/${repo}/issues/${Belt.Int.toString(pr
+     │ Number)}/comments`
+  74 │   let payload = Js.Json.object_(Js.Dict.fromArray([("body", Js.Json.str
+     │ ing(body))]))
+  75 │ 
+  76 │   let result = await apiRequest(token, "POST", endpoint, ~body=payload)
+
+  deprecated: Js.Dict.fromArray
+  Use `Dict.fromArray` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubAPI.res:74:61-74
+
+  72 │ ): result<int, string> => {
+  73 │   let endpoint = `/repos/${owner}/${repo}/issues/${Belt.Int.toString(pr
+     │ Number)}/comments`
+  74 │   let payload = Js.Json.object_(Js.Dict.fromArray([("body", Js.Json.str
+     │ ing(body))]))
+  75 │ 
+  76 │   let result = await apiRequest(token, "POST", endpoint, ~body=payload)
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubAPI.res:80:12-31
+
+  78 ┆ switch result {
+  79 ┆ | Ok(json) =>
+  80 ┆   switch Js.Json.decodeObject(json) {
+  81 ┆   | Some(obj) =>
+  82 ┆     switch Js.Dict.get(obj, "id") {
+
+  deprecated: Js.Json.decodeObject
+  Use `JSON.Decode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubAPI.res:82:14-24
+
+  80 ┆ switch Js.Json.decodeObject(json) {
+  81 ┆ | Some(obj) =>
+  82 ┆   switch Js.Dict.get(obj, "id") {
+  83 ┆   | Some(id) =>
+  84 ┆     switch Js.Json.decodeNumber(id) {
+
+  deprecated: Js.Dict.get
+  Use `Dict.get` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubAPI.res:84:16-35
+
+  82 ┆ switch Js.Dict.get(obj, "id") {
+  83 ┆ | Some(id) =>
+  84 ┆   switch Js.Json.decodeNumber(id) {
+  85 ┆   | Some(num) => Ok(Belt.Float.toInt(num))
+  86 ┆   | None => Error("Invalid comment ID in response")
+
+  deprecated: Js.Json.decodeNumber
+  Use `JSON.Decode.float` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubAPI.res:105:17-31
+
+  103 │ ): result<unit, string> => {
+  104 │   let endpoint = `/repos/${owner}/${repo}/issues/comments/${Belt.Int.t
+      │ oString(commentId)}`
+  105 │   let payload = Js.Json.object_(Js.Dict.fromArray([("body", Js.Json.st
+      │ ring(body))]))
+  106 │ 
+  107 │   let result = await apiRequest(token, "PATCH", endpoint, ~body=payloa
+      │ d)
+
+  deprecated: Js.Json.object_
+  Use `JSON.Encode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubAPI.res:105:33-49
+
+  103 │ ): result<unit, string> => {
+  104 │   let endpoint = `/repos/${owner}/${repo}/issues/comments/${Belt.Int.t
+      │ oString(commentId)}`
+  105 │   let payload = Js.Json.object_(Js.Dict.fromArray([("body", Js.Json.st
+      │ ring(body))]))
+  106 │ 
+  107 │   let result = await apiRequest(token, "PATCH", endpoint, ~body=payloa
+      │ d)
+
+  deprecated: Js.Dict.fromArray
+  Use `Dict.fromArray` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubAPI.res:105:61-74
+
+  103 │ ): result<unit, string> => {
+  104 │   let endpoint = `/repos/${owner}/${repo}/issues/comments/${Belt.Int.t
+      │ oString(commentId)}`
+  105 │   let payload = Js.Json.object_(Js.Dict.fromArray([("body", Js.Json.st
+      │ ring(body))]))
+  106 │ 
+  107 │   let result = await apiRequest(token, "PATCH", endpoint, ~body=payloa
+      │ d)
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubAPI.res:127:17-31
+
+  125 │ ): result<int, string> => {
+  126 │   let endpoint = `/repos/${owner}/${repo}/check-runs`
+  127 │   let payload = Js.Json.object_(
+  128 │     Js.Dict.fromArray([
+  129 │       ("name", Js.Json.string(name)),
+
+  deprecated: Js.Json.object_
+  Use `JSON.Encode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubAPI.res:128:5-21
+
+  126 ┆ let endpoint = `/repos/${owner}/${repo}/check-runs`
+  127 ┆ let payload = Js.Json.object_(
+  128 ┆   Js.Dict.fromArray([
+  129 ┆     ("name", Js.Json.string(name)),
+  130 ┆     ("head_sha", Js.Json.string(headSha)),
+
+  deprecated: Js.Dict.fromArray
+  Use `Dict.fromArray` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubAPI.res:129:16-29
+
+  127 ┆ let payload = Js.Json.object_(
+  128 ┆   Js.Dict.fromArray([
+  129 ┆     ("name", Js.Json.string(name)),
+  130 ┆     ("head_sha", Js.Json.string(headSha)),
+  131 ┆     ("status", Js.Json.string("completed")),
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubAPI.res:130:20-33
+
+  128 ┆ Js.Dict.fromArray([
+  129 ┆   ("name", Js.Json.string(name)),
+  130 ┆   ("head_sha", Js.Json.string(headSha)),
+  131 ┆   ("status", Js.Json.string("completed")),
+  132 ┆   ("conclusion", Js.Json.string(conclusion)),
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubAPI.res:131:18-31
+
+  129 ┆ ("name", Js.Json.string(name)),
+  130 ┆ ("head_sha", Js.Json.string(headSha)),
+  131 ┆ ("status", Js.Json.string("completed")),
+  132 ┆ ("conclusion", Js.Json.string(conclusion)),
+  133 ┆ (
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubAPI.res:132:22-35
+
+  130 ┆ ("head_sha", Js.Json.string(headSha)),
+  131 ┆ ("status", Js.Json.string("completed")),
+  132 ┆ ("conclusion", Js.Json.string(conclusion)),
+  133 ┆ (
+  134 ┆   "output",
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubAPI.res:135:9-23
+
+  133 ┆ (
+  134 ┆   "output",
+  135 ┆   Js.Json.object_(
+  136 ┆     Js.Dict.fromArray([("title", Js.Json.string(title)), ("summary", J
+      ┆ s.Json.string(summary))]),
+  137 ┆   ),
+
+  deprecated: Js.Json.object_
+  Use `JSON.Encode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubAPI.res:136:11-27
+
+  134 ┆   "output",
+  135 ┆   Js.Json.object_(
+  136 ┆     Js.Dict.fromArray([("title", Js.Json.string(title)), ("summary", J
+      ┆ s.Json.string(summary))]),
+  137 ┆   ),
+  138 ┆ ),
+
+  deprecated: Js.Dict.fromArray
+  Use `Dict.fromArray` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubAPI.res:136:40-53
+
+  134 ┆   "output",
+  135 ┆   Js.Json.object_(
+  136 ┆     Js.Dict.fromArray([("title", Js.Json.string(title)), ("summary", J
+      ┆ s.Json.string(summary))]),
+  137 ┆   ),
+  138 ┆ ),
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubAPI.res:136:76-89
+
+  134 ┆   "output",
+  135 ┆   Js.Json.object_(
+  136 ┆     Js.Dict.fromArray([("title", Js.Json.string(title)), ("summary", J
+      ┆ s.Json.string(summary))]),
+  137 ┆   ),
+  138 ┆ ),
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubAPI.res:146:12-31
+
+  144 ┆ switch result {
+  145 ┆ | Ok(json) =>
+  146 ┆   switch Js.Json.decodeObject(json) {
+  147 ┆   | Some(obj) =>
+  148 ┆     switch Js.Dict.get(obj, "id") {
+
+  deprecated: Js.Json.decodeObject
+  Use `JSON.Decode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubAPI.res:148:14-24
+
+  146 ┆ switch Js.Json.decodeObject(json) {
+  147 ┆ | Some(obj) =>
+  148 ┆   switch Js.Dict.get(obj, "id") {
+  149 ┆   | Some(id) =>
+  150 ┆     switch Js.Json.decodeNumber(id) {
+
+  deprecated: Js.Dict.get
+  Use `Dict.get` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubAPI.res:150:16-35
+
+  148 ┆ switch Js.Dict.get(obj, "id") {
+  149 ┆ | Some(id) =>
+  150 ┆   switch Js.Json.decodeNumber(id) {
+  151 ┆   | Some(num) => Ok(Belt.Float.toInt(num))
+  152 ┆   | None => Error("Invalid check run ID in response")
+
+  deprecated: Js.Json.decodeNumber
+  Use `JSON.Decode.float` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubAPI.res:168:11-19
+
+  166 │   repo: string,
+  167 │   prNumber: int,
+  168 │ ): result<Js.Json.t, string> => {
+  169 │   let endpoint = `/repos/${owner}/${repo}/pulls/${Belt.Int.toString(pr
+      │ Number)}`
+  170 │   await apiRequest(token, "GET", endpoint)
+
+  deprecated: Js.Json.t
+  Use `JSON.t` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/GitHubAPI.res:174:80-88
+
+  172 │ 
+  173 │ // Get repository details
+  174 │ let getRepository = async (token: string, owner: string, repo: string)
+      │ : result<Js.Json.t, string> => {
+  175 │   let endpoint = `/repos/${owner}/${repo}`
+  176 │   await apiRequest(token, "GET", endpoint)
+
+  deprecated: Js.Json.t
+  Use `JSON.t` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Report.res:134:49-57
+
+  132 │ 
+  133 │ // Generate SARIF for code scanning integration
+  134 │ let generateSARIF = (analysis: analysisResult): Js.Json.t => {
+  135 │   let rules = [
+  136 │     Js.Dict.fromArray([
+
+  deprecated: Js.Json.t
+  Use `JSON.t` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Report.res:136:5-21
+
+  134 │ let generateSARIF = (analysis: analysisResult): Js.Json.t => {
+  135 │   let rules = [
+  136 │     Js.Dict.fromArray([
+  137 │       ("id", Js.Json.string("eco/eco-minimum")),
+  138 │       ("name", Js.Json.string("EcoMinimum")),
+
+  deprecated: Js.Dict.fromArray
+  Use `Dict.fromArray` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Report.res:137:14-27
+
+  135 ┆ let rules = [
+  136 ┆   Js.Dict.fromArray([
+  137 ┆     ("id", Js.Json.string("eco/eco-minimum")),
+  138 ┆     ("name", Js.Json.string("EcoMinimum")),
+  139 ┆     (
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Report.res:138:16-29
+
+  136 ┆ Js.Dict.fromArray([
+  137 ┆   ("id", Js.Json.string("eco/eco-minimum")),
+  138 ┆   ("name", Js.Json.string("EcoMinimum")),
+  139 ┆   (
+  140 ┆     "shortDescription",
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Report.res:141:9-23
+
+  139 ┆ (
+  140 ┆   "shortDescription",
+  141 ┆   Js.Json.object_(
+  142 ┆     Js.Dict.fromArray([("text", Js.Json.string("Eco minimum threshold 
+      ┆ not met"))]),
+  143 ┆   ),
+
+  deprecated: Js.Json.object_
+  Use `JSON.Encode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Report.res:142:11-27
+
+  140 ┆   "shortDescription",
+  141 ┆   Js.Json.object_(
+  142 ┆     Js.Dict.fromArray([("text", Js.Json.string("Eco minimum threshold 
+      ┆ not met"))]),
+  143 ┆   ),
+  144 ┆ ),
+
+  deprecated: Js.Dict.fromArray
+  Use `Dict.fromArray` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Report.res:142:39-52
+
+  140 ┆   "shortDescription",
+  141 ┆   Js.Json.object_(
+  142 ┆     Js.Dict.fromArray([("text", Js.Json.string("Eco minimum threshold 
+      ┆ not met"))]),
+  143 ┆   ),
+  144 ┆ ),
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Report.res:146:5-21
+
+  144 ┆   ),
+  145 ┆ ]),
+  146 ┆ Js.Dict.fromArray([
+  147 ┆   ("id", Js.Json.string("eco/eco-standard")),
+  148 ┆   ("name", Js.Json.string("EcoStandard")),
+
+  deprecated: Js.Dict.fromArray
+  Use `Dict.fromArray` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Report.res:147:14-27
+
+  145 ┆ ]),
+  146 ┆ Js.Dict.fromArray([
+  147 ┆   ("id", Js.Json.string("eco/eco-standard")),
+  148 ┆   ("name", Js.Json.string("EcoStandard")),
+  149 ┆   (
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Report.res:148:16-29
+
+  146 ┆ Js.Dict.fromArray([
+  147 ┆   ("id", Js.Json.string("eco/eco-standard")),
+  148 ┆   ("name", Js.Json.string("EcoStandard")),
+  149 ┆   (
+  150 ┆     "shortDescription",
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Report.res:151:9-23
+
+  149 ┆ (
+  150 ┆   "shortDescription",
+  151 ┆   Js.Json.object_(
+  152 ┆     Js.Dict.fromArray([("text", Js.Json.string("Eco standard threshold
+      ┆  not met"))]),
+  153 ┆   ),
+
+  deprecated: Js.Json.object_
+  Use `JSON.Encode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Report.res:152:11-27
+
+  150 ┆   "shortDescription",
+  151 ┆   Js.Json.object_(
+  152 ┆     Js.Dict.fromArray([("text", Js.Json.string("Eco standard threshold
+      ┆  not met"))]),
+  153 ┆   ),
+  154 ┆ ),
+
+  deprecated: Js.Dict.fromArray
+  Use `Dict.fromArray` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Report.res:152:39-52
+
+  150 ┆   "shortDescription",
+  151 ┆   Js.Json.object_(
+  152 ┆     Js.Dict.fromArray([("text", Js.Json.string("Eco standard threshold
+      ┆  not met"))]),
+  153 ┆   ),
+  154 ┆ ),
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Report.res:160:7-23
+
+  158 ┆ let results =
+  159 ┆   analysis.violations->Belt.Array.map(v => {
+  160 ┆     Js.Dict.fromArray([
+  161 ┆       ("ruleId", Js.Json.string(`eco/${Js.String.replace("_", "-", v.p
+      ┆ olicy)}`)),
+  162 ┆       ("level", Js.Json.string(v.severity == Blocking ? "error" : "war
+      ┆ ning")),
+
+  deprecated: Js.Dict.fromArray
+  Use `Dict.fromArray` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Report.res:161:20-33
+
+  159 ┆ analysis.violations->Belt.Array.map(v => {
+  160 ┆   Js.Dict.fromArray([
+  161 ┆     ("ruleId", Js.Json.string(`eco/${Js.String.replace("_", "-", v.pol
+      ┆ icy)}`)),
+  162 ┆     ("level", Js.Json.string(v.severity == Blocking ? "error" : "warni
+      ┆ ng")),
+  163 ┆     (
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Report.res:162:19-32
+
+  160 ┆ Js.Dict.fromArray([
+  161 ┆   ("ruleId", Js.Json.string(`eco/${Js.String.replace("_", "-", v.polic
+      ┆ y)}`)),
+  162 ┆   ("level", Js.Json.string(v.severity == Blocking ? "error" : "warning
+      ┆ ")),
+  163 ┆   (
+  164 ┆     "message",
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Report.res:165:11-25
+
+  163 ┆   (
+  164 ┆     "message",
+  165 ┆     Js.Json.object_(Js.Dict.fromArray([("text", Js.Json.string(v.messa
+      ┆ ge))])),
+  166 ┆   ),
+  167 ┆ ])
+
+  deprecated: Js.Json.object_
+  Use `JSON.Encode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Report.res:165:27-43
+
+  163 ┆   (
+  164 ┆     "message",
+  165 ┆     Js.Json.object_(Js.Dict.fromArray([("text", Js.Json.string(v.messa
+      ┆ ge))])),
+  166 ┆   ),
+  167 ┆ ])
+
+  deprecated: Js.Dict.fromArray
+  Use `Dict.fromArray` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Report.res:165:55-68
+
+  163 ┆   (
+  164 ┆     "message",
+  165 ┆     Js.Json.object_(Js.Dict.fromArray([("text", Js.Json.string(v.messa
+      ┆ ge))])),
+  166 ┆   ),
+  167 ┆ ])
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Report.res:170:3-17
+
+  168 ┆   })
+  169 ┆ 
+  170 ┆ Js.Json.object_(
+  171 ┆   Js.Dict.fromArray([
+  172 ┆     (
+
+  deprecated: Js.Json.object_
+  Use `JSON.Encode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Report.res:171:5-21
+
+  169 ┆ 
+  170 ┆ Js.Json.object_(
+  171 ┆   Js.Dict.fromArray([
+  172 ┆     (
+  173 ┆       "$schema",
+
+  deprecated: Js.Dict.fromArray
+  Use `Dict.fromArray` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Report.res:174:9-22
+
+  172 ┆ (
+  173 ┆   "$schema",
+  174 ┆   Js.Json.string(
+  175 ┆     "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Sch
+      ┆ emata/sarif-schema-2.1.0.json",
+  176 ┆   ),
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Report.res:178:19-32
+
+  176 ┆   ),
+  177 ┆ ),
+  178 ┆ ("version", Js.Json.string("2.1.0")),
+  179 ┆ (
+  180 ┆   "runs",
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Report.res:181:9-21
+
+  179 ┆ (
+  180 ┆   "runs",
+  181 ┆   Js.Json.array([
+  182 ┆     Js.Json.object_(
+  183 ┆       Js.Dict.fromArray([
+
+  deprecated: Js.Json.array
+  Use `JSON.Encode.array` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Report.res:182:11-25
+
+  180 ┆ "runs",
+  181 ┆ Js.Json.array([
+  182 ┆   Js.Json.object_(
+  183 ┆     Js.Dict.fromArray([
+  184 ┆       (
+
+  deprecated: Js.Json.object_
+  Use `JSON.Encode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Report.res:183:13-29
+
+  181 ┆ Js.Json.array([
+  182 ┆   Js.Json.object_(
+  183 ┆     Js.Dict.fromArray([
+  184 ┆       (
+  185 ┆         "tool",
+
+  deprecated: Js.Dict.fromArray
+  Use `Dict.fromArray` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Report.res:186:17-31
+
+  184 ┆ (
+  185 ┆   "tool",
+  186 ┆   Js.Json.object_(
+  187 ┆     Js.Dict.fromArray([
+  188 ┆       (
+
+  deprecated: Js.Json.object_
+  Use `JSON.Encode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Report.res:187:19-35
+
+  185 ┆ "tool",
+  186 ┆ Js.Json.object_(
+  187 ┆   Js.Dict.fromArray([
+  188 ┆     (
+  189 ┆       "driver",
+
+  deprecated: Js.Dict.fromArray
+  Use `Dict.fromArray` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Report.res:190:23-37
+
+  188 ┆ (
+  189 ┆   "driver",
+  190 ┆   Js.Json.object_(
+  191 ┆     Js.Dict.fromArray([
+  192 ┆       ("name", Js.Json.string("oikos-bot")),
+
+  deprecated: Js.Json.object_
+  Use `JSON.Encode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Report.res:191:25-41
+
+  189 ┆ "driver",
+  190 ┆ Js.Json.object_(
+  191 ┆   Js.Dict.fromArray([
+  192 ┆     ("name", Js.Json.string("oikos-bot")),
+  193 ┆     ("version", Js.Json.string("0.1.0-beta")),
+
+  deprecated: Js.Dict.fromArray
+  Use `Dict.fromArray` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Report.res:192:36-49
+
+  190 ┆ Js.Json.object_(
+  191 ┆   Js.Dict.fromArray([
+  192 ┆     ("name", Js.Json.string("oikos-bot")),
+  193 ┆     ("version", Js.Json.string("0.1.0-beta")),
+  194 ┆     (
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Report.res:193:39-52
+
+  191 ┆ Js.Dict.fromArray([
+  192 ┆   ("name", Js.Json.string("oikos-bot")),
+  193 ┆   ("version", Js.Json.string("0.1.0-beta")),
+  194 ┆   (
+  195 ┆     "informationUri",
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Report.res:196:29-42
+
+  194 ┆ (
+  195 ┆   "informationUri",
+  196 ┆   Js.Json.string("https://github.com/hyperpolymath/oikos-bot"),
+  197 ┆ ),
+  198 ┆ ("rules", Js.Json.array(rules->Belt.Array.map(Js.Json.object_))),
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Report.res:198:37-49
+
+  196 ┆       Js.Json.string("https://github.com/hyperpolymath/oikos-bot"),
+  197 ┆     ),
+  198 ┆     ("rules", Js.Json.array(rules->Belt.Array.map(Js.Json.object_))),
+  199 ┆   ]),
+  200 ┆ ),
+
+  deprecated: Js.Json.array
+  Use `JSON.Encode.array` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Report.res:198:73-87
+
+  196 ┆       Js.Json.string("https://github.com/hyperpolymath/oikos-bot"),
+  197 ┆     ),
+  198 ┆     ("rules", Js.Json.array(rules->Belt.Array.map(Js.Json.object_))),
+  199 ┆   ]),
+  200 ┆ ),
+
+  deprecated: Js.Json.object_
+  Use `JSON.Encode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Report.res:205:27-39
+
+  203 ┆       ),
+  204 ┆     ),
+  205 ┆     ("results", Js.Json.array(results->Belt.Array.map(Js.Json.object_)
+      ┆ )),
+  206 ┆   ]),
+  207 ┆ ),
+
+  deprecated: Js.Json.array
+  Use `JSON.Encode.array` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Report.res:205:65-79
+
+  203 ┆       ),
+  204 ┆     ),
+  205 ┆     ("results", Js.Json.array(results->Belt.Array.map(Js.Json.object_)
+      ┆ )),
+  206 ┆   ]),
+  207 ┆ ),
+
+  deprecated: Js.Json.object_
+  Use `JSON.Encode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Oikos.res:55:36-44
+
+  53 │ type msg =
+  54 │   // Webhook events
+  55 │   | WebhookReceived(webhookSource, Js.Json.t)
+  56 │   | WebhookVerified(webhookSource, Js.Json.t)
+  57 │   | WebhookRejected(string)
+
+  deprecated: Js.Json.t
+  Use `JSON.t` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Oikos.res:56:36-44
+
+  54 ┆ // Webhook events
+  55 ┆ | WebhookReceived(webhookSource, Js.Json.t)
+  56 ┆ | WebhookVerified(webhookSource, Js.Json.t)
+  57 ┆ | WebhookRejected(string)
+  58 ┆ // Analysis lifecycle
+
+  deprecated: Js.Json.t
+  Use `JSON.t` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Oikos.res:99:16-26
+
+   97 ┆   pendingAnalyses: [],
+   98 ┆   totalProcessed: 0,
+   99 ┆   startTime: Js.Date.now(),
+  100 ┆   healthy: true,
+  101 ┆ }
+
+  deprecated: Js.Date.now
+  Use `Date.now` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Oikos.res:103:3-16
+
+  101 ┆ }
+  102 ┆ 
+  103 ┆ Js.Console.log(`🏛️ Oikos Bot starting...`)
+  104 ┆ Js.Console.log(`   Mode: ${flags.mode}`)
+  105 ┆ Js.Console.log(`   Port: ${flags.port->Belt.Int.toString}`)
+
+  deprecated: Js.Console.log
+  Use `Console.log` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Oikos.res:104:3-16
+
+  102 ┆ 
+  103 ┆ Js.Console.log(`🏛️ Oikos Bot starting...`)
+  104 ┆ Js.Console.log(`   Mode: ${flags.mode}`)
+  105 ┆ Js.Console.log(`   Port: ${flags.port->Belt.Int.toString}`)
+  106 ┆ 
+
+  deprecated: Js.Console.log
+  Use `Console.log` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Oikos.res:105:3-16
+
+  103 ┆ Js.Console.log(`🏛️ Oikos Bot starting...`)
+  104 ┆ Js.Console.log(`   Mode: ${flags.mode}`)
+  105 ┆ Js.Console.log(`   Port: ${flags.port->Belt.Int.toString}`)
+  106 ┆ 
+  107 ┆ (model, Cmd.none)
+
+  deprecated: Js.Console.log
+  Use `Console.log` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Oikos.res:121:7-20
+
+  119 ┆ | GitLab => "GitLab"
+  120 ┆ }
+  121 ┆ Js.Console.log(`📨 Webhook received from ${sourceStr}`)
+  122 ┆ // TODO: Verify signature then dispatch WebhookVerified
+  123 ┆ (model, Cmd.perform(async () => payload, p => WebhookVerified(source, 
+      ┆ p)))
+
+  deprecated: Js.Console.log
+  Use `Console.log` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Oikos.res:127:7-20
+
+  125 ┆ 
+  126 ┆ | WebhookVerified(source, payload) => {
+  127 ┆     Js.Console.log(`✓ Webhook verified`)
+  128 ┆     // Parse the webhook and determine action
+  129 ┆     let _ = source
+
+  deprecated: Js.Console.log
+  Use `Console.log` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Oikos.res:136:7-22
+
+  134 ┆ 
+  135 ┆ | WebhookRejected(reason) => {
+  136 ┆     Js.Console.error(`✗ Webhook rejected: ${reason}`)
+  137 ┆     (model, Cmd.none)
+  138 ┆   }
+
+  deprecated: Js.Console.error
+  Use `Console.error` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Oikos.res:141:7-20
+
+  139 ┆ 
+  140 ┆ | AnalysisRequested(id, repo, prNumber) => {
+  141 ┆     Js.Console.log(`🔍 Analysis requested: ${repo}#${prNumber->Belt.
+      ┆ Int.toString}`)
+  142 ┆     let analysis = {
+  143 ┆       id,
+
+  deprecated: Js.Console.log
+  Use `Console.log` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Oikos.res:147:20-30
+
+  145 ┆   prNumber,
+  146 ┆   status: Pending,
+  147 ┆   createdAt: Js.Date.now(),
+  148 ┆ }
+  149 ┆ (
+
+  deprecated: Js.Date.now
+  Use `Date.now` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Oikos.res:150:60-75
+
+  148 ┆ }
+  149 ┆ (
+  150 ┆   {...model, pendingAnalyses: model.pendingAnalyses->Js.Array2.concat(
+      ┆ [analysis])},
+  151 ┆   Cmd.none,
+  152 ┆ )
+
+  deprecated: Js.Array2.concat
+  Use `Array.concat` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Oikos.res:157:32-44
+
+  155 ┆ | AnalysisStarted(id) => {
+  156 ┆     let pendingAnalyses =
+  157 ┆       model.pendingAnalyses->Js.Array2.map(a =>
+  158 ┆         if a.id == id {
+  159 ┆           {...a, status: InProgress}
+
+  deprecated: Js.Array2.map
+  Use `Array.map` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Oikos.res:168:7-20
+
+  166 ┆ 
+  167 ┆ | AnalysisCompleted(id, result) => {
+  168 ┆     Js.Console.log(`✓ Analysis completed: ${id}`)
+  169 ┆     let pendingAnalyses =
+  170 ┆       model.pendingAnalyses->Js.Array2.map(a =>
+
+  deprecated: Js.Console.log
+  Use `Console.log` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Oikos.res:170:32-44
+
+  168 ┆ Js.Console.log(`✓ Analysis completed: ${id}`)
+  169 ┆ let pendingAnalyses =
+  170 ┆   model.pendingAnalyses->Js.Array2.map(a =>
+  171 ┆     if a.id == id {
+  172 ┆       {...a, status: Completed(result)}
+
+  deprecated: Js.Array2.map
+  Use `Array.map` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Oikos.res:181:7-22
+
+  179 ┆ 
+  180 ┆ | AnalysisFailed(id, error) => {
+  181 ┆     Js.Console.error(`✗ Analysis failed: ${id} - ${error}`)
+  182 ┆     let pendingAnalyses =
+  183 ┆       model.pendingAnalyses->Js.Array2.map(a =>
+
+  deprecated: Js.Console.error
+  Use `Console.error` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Oikos.res:183:32-44
+
+  181 ┆ Js.Console.error(`✗ Analysis failed: ${id} - ${error}`)
+  182 ┆ let pendingAnalyses =
+  183 ┆   model.pendingAnalyses->Js.Array2.map(a =>
+  184 ┆     if a.id == id {
+  185 ┆       {...a, status: Failed(error)}
+
+  deprecated: Js.Array2.map
+  Use `Array.map` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Oikos.res:194:7-20
+
+  192 ┆ 
+  193 ┆ | CommentPosted(repo, prNumber) => {
+  194 ┆     Js.Console.log(`💬 Comment posted to ${repo}#${prNumber->Belt.In
+      ┆ t.toString}`)
+  195 ┆     (model, Cmd.none)
+  196 ┆   }
+
+  deprecated: Js.Console.log
+  Use `Console.log` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Oikos.res:199:7-22
+
+  197 ┆ 
+  198 ┆ | CommentFailed(repo, error) => {
+  199 ┆     Js.Console.error(`✗ Failed to post comment to ${repo}: ${error}`
+      ┆ )
+  200 ┆     (model, Cmd.none)
+  201 ┆   }
+
+  deprecated: Js.Console.error
+  Use `Console.error` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Oikos.res:204:7-20
+
+  202 ┆ 
+  203 ┆ | HealthCheck => {
+  204 ┆     Js.Console.log(`💚 Health check - processed: ${model.totalProces
+      ┆ sed->Belt.Int.toString}`)
+  205 ┆     (model, Cmd.none)
+  206 ┆   }
+
+  deprecated: Js.Console.log
+  Use `Console.log` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Oikos.res:210:17-27
+
+  208 ┆ | Tick => {
+  209 ┆     // Periodic cleanup of old analyses
+  210 ┆     let now = Js.Date.now()
+  211 ┆     let oneHour = 60.0 *. 60.0 *. 1000.0
+  212 ┆     let pendingAnalyses =
+
+  deprecated: Js.Date.now
+  Use `Date.now` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Oikos.res:213:32-47
+
+  211 ┆   let oneHour = 60.0 *. 60.0 *. 1000.0
+  212 ┆   let pendingAnalyses =
+  213 ┆     model.pendingAnalyses->Js.Array2.filter(a => now -. a.createdAt < 
+      ┆ oneHour)
+  214 ┆   ({...model, pendingAnalyses}, Cmd.none)
+  215 ┆ }
+
+  deprecated: Js.Array2.filter
+  Use `Array.filter` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Oikos.res:218:7-20
+
+  216 ┆ 
+  217 ┆ | Shutdown => {
+  218 ┆     Js.Console.log(`👋 Shutting down...`)
+  219 ┆     ({...model, healthy: false}, Cmd.none)
+  220 ┆   }
+
+  deprecated: Js.Console.log
+  Use `Console.log` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:11:53-61
+
+   9 │ 
+  10 │ // Logger helper
+  11 │ let log = (level: string, msg: string, data: option<Js.Json.t>) => {
+  12 │   let timestamp = Js.Date.toISOString(Js.Date.make())
+  13 │   let logObj = switch data {
+
+  deprecated: Js.Json.t
+  Use `JSON.t` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:12:19-37
+
+  10 │ // Logger helper
+  11 │ let log = (level: string, msg: string, data: option<Js.Json.t>) => {
+  12 │   let timestamp = Js.Date.toISOString(Js.Date.make())
+  13 │   let logObj = switch data {
+  14 │   | Some(d) =>
+
+  deprecated: Js.Date.toISOString
+  Use `Date.toISOString` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:12:39-50
+
+  10 │ // Logger helper
+  11 │ let log = (level: string, msg: string, data: option<Js.Json.t>) => {
+  12 │   let timestamp = Js.Date.toISOString(Js.Date.make())
+  13 │   let logObj = switch data {
+  14 │   | Some(d) =>
+
+  deprecated: Js.Date.make
+  Use `Date.make` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:15:5-21
+
+  13 ┆ let logObj = switch data {
+  14 ┆ | Some(d) =>
+  15 ┆   Js.Dict.fromArray([
+  16 ┆     ("timestamp", Js.Json.string(timestamp)),
+  17 ┆     ("level", Js.Json.string(level)),
+
+  deprecated: Js.Dict.fromArray
+  Use `Dict.fromArray` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:16:21-34
+
+  14 ┆ | Some(d) =>
+  15 ┆   Js.Dict.fromArray([
+  16 ┆     ("timestamp", Js.Json.string(timestamp)),
+  17 ┆     ("level", Js.Json.string(level)),
+  18 ┆     ("message", Js.Json.string(msg)),
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:17:17-30
+
+  15 ┆ Js.Dict.fromArray([
+  16 ┆   ("timestamp", Js.Json.string(timestamp)),
+  17 ┆   ("level", Js.Json.string(level)),
+  18 ┆   ("message", Js.Json.string(msg)),
+  19 ┆   ("data", d),
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:18:19-32
+
+  16 ┆   ("timestamp", Js.Json.string(timestamp)),
+  17 ┆   ("level", Js.Json.string(level)),
+  18 ┆   ("message", Js.Json.string(msg)),
+  19 ┆   ("data", d),
+  20 ┆ ])
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:22:5-21
+
+  20 ┆   ])
+  21 ┆ | None =>
+  22 ┆   Js.Dict.fromArray([
+  23 ┆     ("timestamp", Js.Json.string(timestamp)),
+  24 ┆     ("level", Js.Json.string(level)),
+
+  deprecated: Js.Dict.fromArray
+  Use `Dict.fromArray` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:23:21-34
+
+  21 ┆ | None =>
+  22 ┆   Js.Dict.fromArray([
+  23 ┆     ("timestamp", Js.Json.string(timestamp)),
+  24 ┆     ("level", Js.Json.string(level)),
+  25 ┆     ("message", Js.Json.string(msg)),
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:24:17-30
+
+  22 ┆ Js.Dict.fromArray([
+  23 ┆   ("timestamp", Js.Json.string(timestamp)),
+  24 ┆   ("level", Js.Json.string(level)),
+  25 ┆   ("message", Js.Json.string(msg)),
+  26 ┆ ])
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:25:19-32
+
+  23 ┆     ("timestamp", Js.Json.string(timestamp)),
+  24 ┆     ("level", Js.Json.string(level)),
+  25 ┆     ("message", Js.Json.string(msg)),
+  26 ┆   ])
+  27 ┆ }
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:28:3-16
+
+  26 │     ])
+  27 │   }
+  28 │   Js.Console.log(Js.Json.stringify(Js.Json.object_(logObj)))
+  29 │ }
+  30 │ 
+
+  deprecated: Js.Console.log
+  Use `Console.log` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:28:18-34
+
+  26 │     ])
+  27 │   }
+  28 │   Js.Console.log(Js.Json.stringify(Js.Json.object_(logObj)))
+  29 │ }
+  30 │ 
+
+  deprecated: Js.Json.stringify
+  Use `JSON.stringify` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:28:36-50
+
+  26 │     ])
+  27 │   }
+  28 │   Js.Console.log(Js.Json.stringify(Js.Json.object_(logObj)))
+  29 │ }
+  30 │ 
+
+  deprecated: Js.Json.object_
+  Use `JSON.Encode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:35:31-39
+
+  33 │ 
+  34 │ // Extract PR info from GitHub payload
+  35 │ let extractPRInfo = (payload: Js.Json.t): (int, string, string) => {
+  36 │   switch Js.Json.decodeObject(payload) {
+  37 │   | Some(obj) =>
+
+  deprecated: Js.Json.t
+  Use `JSON.t` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:36:10-29
+
+  34 │ // Extract PR info from GitHub payload
+  35 │ let extractPRInfo = (payload: Js.Json.t): (int, string, string) => {
+  36 │   switch Js.Json.decodeObject(payload) {
+  37 │   | Some(obj) =>
+  38 │     let prNumber = switch Js.Dict.get(obj, "number") {
+
+  deprecated: Js.Json.decodeObject
+  Use `JSON.Decode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:38:27-37
+
+  36 ┆ switch Js.Json.decodeObject(payload) {
+  37 ┆ | Some(obj) =>
+  38 ┆   let prNumber = switch Js.Dict.get(obj, "number") {
+  39 ┆   | Some(n) =>
+  40 ┆     switch Js.Json.decodeNumber(n) {
+
+  deprecated: Js.Dict.get
+  Use `Dict.get` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:40:14-33
+
+  38 ┆ let prNumber = switch Js.Dict.get(obj, "number") {
+  39 ┆ | Some(n) =>
+  40 ┆   switch Js.Json.decodeNumber(n) {
+  41 ┆   | Some(num) => Belt.Float.toInt(num)
+  42 ┆   | None => 0
+
+  deprecated: Js.Json.decodeNumber
+  Use `JSON.Decode.float` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:46:37-47
+
+  44 ┆ | None => 0
+  45 ┆ }
+  46 ┆ let (baseSha, headSha) = switch Js.Dict.get(obj, "pull_request") {
+  47 ┆ | Some(pr) =>
+  48 ┆   switch Js.Json.decodeObject(pr) {
+
+  deprecated: Js.Dict.get
+  Use `Dict.get` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:48:14-33
+
+  46 ┆ let (baseSha, headSha) = switch Js.Dict.get(obj, "pull_request") {
+  47 ┆ | Some(pr) =>
+  48 ┆   switch Js.Json.decodeObject(pr) {
+  49 ┆   | Some(prObj) =>
+  50 ┆     let base = switch Js.Dict.get(prObj, "base") {
+
+  deprecated: Js.Json.decodeObject
+  Use `JSON.Decode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:50:27-37
+
+  48 ┆ switch Js.Json.decodeObject(pr) {
+  49 ┆ | Some(prObj) =>
+  50 ┆   let base = switch Js.Dict.get(prObj, "base") {
+  51 ┆   | Some(b) =>
+  52 ┆     switch Js.Json.decodeObject(b) {
+
+  deprecated: Js.Dict.get
+  Use `Dict.get` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:52:18-37
+
+  50 ┆ let base = switch Js.Dict.get(prObj, "base") {
+  51 ┆ | Some(b) =>
+  52 ┆   switch Js.Json.decodeObject(b) {
+  53 ┆   | Some(baseObj) =>
+  54 ┆     switch Js.Dict.get(baseObj, "sha") {
+
+  deprecated: Js.Json.decodeObject
+  Use `JSON.Decode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:54:20-30
+
+  52 ┆ switch Js.Json.decodeObject(b) {
+  53 ┆ | Some(baseObj) =>
+  54 ┆   switch Js.Dict.get(baseObj, "sha") {
+  55 ┆   | Some(s) => Js.Json.decodeString(s)->Belt.Option.getWithDefault("")
+  56 ┆   | None => ""
+
+  deprecated: Js.Dict.get
+  Use `Dict.get` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:55:26-45
+
+  53 ┆ | Some(baseObj) =>
+  54 ┆   switch Js.Dict.get(baseObj, "sha") {
+  55 ┆   | Some(s) => Js.Json.decodeString(s)->Belt.Option.getWithDefault("")
+  56 ┆   | None => ""
+  57 ┆   }
+
+  deprecated: Js.Json.decodeString
+  Use `JSON.Decode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:62:27-37
+
+  60 ┆ | None => ""
+  61 ┆ }
+  62 ┆ let head = switch Js.Dict.get(prObj, "head") {
+  63 ┆ | Some(h) =>
+  64 ┆   switch Js.Json.decodeObject(h) {
+
+  deprecated: Js.Dict.get
+  Use `Dict.get` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:64:18-37
+
+  62 ┆ let head = switch Js.Dict.get(prObj, "head") {
+  63 ┆ | Some(h) =>
+  64 ┆   switch Js.Json.decodeObject(h) {
+  65 ┆   | Some(headObj) =>
+  66 ┆     switch Js.Dict.get(headObj, "sha") {
+
+  deprecated: Js.Json.decodeObject
+  Use `JSON.Decode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:66:20-30
+
+  64 ┆ switch Js.Json.decodeObject(h) {
+  65 ┆ | Some(headObj) =>
+  66 ┆   switch Js.Dict.get(headObj, "sha") {
+  67 ┆   | Some(s) => Js.Json.decodeString(s)->Belt.Option.getWithDefault("")
+  68 ┆   | None => ""
+
+  deprecated: Js.Dict.get
+  Use `Dict.get` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:67:26-45
+
+  65 ┆ | Some(headObj) =>
+  66 ┆   switch Js.Dict.get(headObj, "sha") {
+  67 ┆   | Some(s) => Js.Json.decodeString(s)->Belt.Option.getWithDefault("")
+  68 ┆   | None => ""
+  69 ┆   }
+
+  deprecated: Js.Json.decodeString
+  Use `JSON.Decode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:85:31-39
+
+  83 │ 
+  84 │ // Extract MR info from GitLab payload
+  85 │ let extractMRInfo = (payload: Js.Json.t): (int, string, string) => {
+  86 │   switch Js.Json.decodeObject(payload) {
+  87 │   | Some(obj) =>
+
+  deprecated: Js.Json.t
+  Use `JSON.t` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:86:10-29
+
+  84 │ // Extract MR info from GitLab payload
+  85 │ let extractMRInfo = (payload: Js.Json.t): (int, string, string) => {
+  86 │   switch Js.Json.decodeObject(payload) {
+  87 │   | Some(obj) =>
+  88 │     switch Js.Dict.get(obj, "object_attributes") {
+
+  deprecated: Js.Json.decodeObject
+  Use `JSON.Decode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:88:12-22
+
+  86 ┆ switch Js.Json.decodeObject(payload) {
+  87 ┆ | Some(obj) =>
+  88 ┆   switch Js.Dict.get(obj, "object_attributes") {
+  89 ┆   | Some(attrs) =>
+  90 ┆     switch Js.Json.decodeObject(attrs) {
+
+  deprecated: Js.Dict.get
+  Use `Dict.get` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:90:14-33
+
+  88 ┆ switch Js.Dict.get(obj, "object_attributes") {
+  89 ┆ | Some(attrs) =>
+  90 ┆   switch Js.Json.decodeObject(attrs) {
+  91 ┆   | Some(attrsObj) =>
+  92 ┆     let mrIid = switch Js.Dict.get(attrsObj, "iid") {
+
+  deprecated: Js.Json.decodeObject
+  Use `JSON.Decode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:92:28-38
+
+  90 ┆ switch Js.Json.decodeObject(attrs) {
+  91 ┆ | Some(attrsObj) =>
+  92 ┆   let mrIid = switch Js.Dict.get(attrsObj, "iid") {
+  93 ┆   | Some(n) =>
+  94 ┆     switch Js.Json.decodeNumber(n) {
+
+  deprecated: Js.Dict.get
+  Use `Dict.get` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:94:18-37
+
+  92 ┆ let mrIid = switch Js.Dict.get(attrsObj, "iid") {
+  93 ┆ | Some(n) =>
+  94 ┆   switch Js.Json.decodeNumber(n) {
+  95 ┆   | Some(num) => Belt.Float.toInt(num)
+  96 ┆   | None => 0
+
+  deprecated: Js.Json.decodeNumber
+  Use `JSON.Decode.float` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:100:30-40
+
+   98 ┆ | None => 0
+   99 ┆ }
+  100 ┆ let baseSha = switch Js.Dict.get(attrsObj, "diff_refs") {
+  101 ┆ | Some(refs) =>
+  102 ┆   switch Js.Json.decodeObject(refs) {
+
+  deprecated: Js.Dict.get
+  Use `Dict.get` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:102:18-37
+
+  100 ┆ let baseSha = switch Js.Dict.get(attrsObj, "diff_refs") {
+  101 ┆ | Some(refs) =>
+  102 ┆   switch Js.Json.decodeObject(refs) {
+  103 ┆   | Some(refsObj) =>
+  104 ┆     switch Js.Dict.get(refsObj, "base_sha") {
+
+  deprecated: Js.Json.decodeObject
+  Use `JSON.Decode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:104:20-30
+
+  102 ┆ switch Js.Json.decodeObject(refs) {
+  103 ┆ | Some(refsObj) =>
+  104 ┆   switch Js.Dict.get(refsObj, "base_sha") {
+  105 ┆   | Some(s) => Js.Json.decodeString(s)->Belt.Option.getWithDefault("")
+  106 ┆   | None => ""
+
+  deprecated: Js.Dict.get
+  Use `Dict.get` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:105:26-45
+
+  103 ┆ | Some(refsObj) =>
+  104 ┆   switch Js.Dict.get(refsObj, "base_sha") {
+  105 ┆   | Some(s) => Js.Json.decodeString(s)->Belt.Option.getWithDefault("")
+  106 ┆   | None => ""
+  107 ┆   }
+
+  deprecated: Js.Json.decodeString
+  Use `JSON.Decode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:112:30-40
+
+  110 ┆ | None => ""
+  111 ┆ }
+  112 ┆ let headSha = switch Js.Dict.get(attrsObj, "last_commit") {
+  113 ┆ | Some(commit) =>
+  114 ┆   switch Js.Json.decodeObject(commit) {
+
+  deprecated: Js.Dict.get
+  Use `Dict.get` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:114:18-37
+
+  112 ┆ let headSha = switch Js.Dict.get(attrsObj, "last_commit") {
+  113 ┆ | Some(commit) =>
+  114 ┆   switch Js.Json.decodeObject(commit) {
+  115 ┆   | Some(commitObj) =>
+  116 ┆     switch Js.Dict.get(commitObj, "id") {
+
+  deprecated: Js.Json.decodeObject
+  Use `JSON.Decode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:116:20-30
+
+  114 ┆ switch Js.Json.decodeObject(commit) {
+  115 ┆ | Some(commitObj) =>
+  116 ┆   switch Js.Dict.get(commitObj, "id") {
+  117 ┆   | Some(s) => Js.Json.decodeString(s)->Belt.Option.getWithDefault("")
+  118 ┆   | None => ""
+
+  deprecated: Js.Dict.get
+  Use `Dict.get` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:117:26-45
+
+  115 ┆ | Some(commitObj) =>
+  116 ┆   switch Js.Dict.get(commitObj, "id") {
+  117 ┆   | Some(s) => Js.Json.decodeString(s)->Belt.Option.getWithDefault("")
+  118 ┆   | None => ""
+  119 ┆   }
+
+  deprecated: Js.Json.decodeString
+  Use `JSON.Decode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:134:27-35
+
+  132 │ 
+  133 │ // JSON response helper
+  134 │ let jsonResponse = (data: Js.Json.t, ~status=200): Http.response => {
+  135 │   Http.makeJsonResponse(
+  136 │     Js.Json.stringify(data),
+
+  deprecated: Js.Json.t
+  Use `JSON.t` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:136:5-21
+
+  134 │ let jsonResponse = (data: Js.Json.t, ~status=200): Http.response => {
+  135 │   Http.makeJsonResponse(
+  136 │     Js.Json.stringify(data),
+  137 │     {
+  138 │       "status": status,
+
+  deprecated: Js.Json.stringify
+  Use `JSON.stringify` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:147:12-20
+
+  145 │ let validateGitHubSignature = async (
+  146 │   config: config,
+  147 │   headers: Js.Dict.t<string>,
+  148 │   body: string,
+  149 │ ): option<Http.response> => {
+
+  deprecated: Js.Dict.t
+  Use `dict` directly instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:152:21-31
+
+  150 ┆ switch config.githubWebhookSecret {
+  151 ┆ | Some(secret) =>
+  152 ┆   let signature = Js.Dict.get(headers, "x-hub-signature-256")->Belt.Op
+      ┆ tion.getWithDefault("")
+  153 ┆   let valid = await Webhook.verifyGitHubSignature(body, signature, sec
+      ┆ ret)
+  154 ┆   if !valid {
+
+  deprecated: Js.Dict.get
+  Use `Dict.get` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:167:12-20
+
+  165 │ let handleGitHubWebhook = async (
+  166 │   config: config,
+  167 │   headers: Js.Dict.t<string>,
+  168 │   body: string,
+  169 │ ): Http.response => {
+
+  deprecated: Js.Dict.t
+  Use `dict` directly instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:177:12-27
+
+  175 ┆ // Parse payload
+  176 ┆ let parseResult = try {
+  177 ┆   Some(Js.Json.parseExn(body))
+  178 ┆ } catch {
+  179 ┆ | _ => None
+
+  deprecated: Js.Json.parseExn
+  Use `JSON.parseOrThrow` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:190:17-31
+
+  188 ┆ info(
+  189 ┆   `GitHub event: ${e.eventType}`,
+  190 ┆   ~data=Js.Json.object_(
+  191 ┆     Js.Dict.fromArray([
+  192 ┆       ("repo", Js.Json.string(`${e.repository.owner}/${e.repository.na
+      ┆ me}`)),
+
+  deprecated: Js.Json.object_
+  Use `JSON.Encode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:191:13-29
+
+  189 ┆ `GitHub event: ${e.eventType}`,
+  190 ┆ ~data=Js.Json.object_(
+  191 ┆   Js.Dict.fromArray([
+  192 ┆     ("repo", Js.Json.string(`${e.repository.owner}/${e.repository.name
+      ┆ }`)),
+  193 ┆     ("action", Js.Json.string(e.action->Belt.Option.getWithDefault("")
+      ┆ )),
+
+  deprecated: Js.Dict.fromArray
+  Use `Dict.fromArray` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:192:24-37
+
+  190 ┆ ~data=Js.Json.object_(
+  191 ┆   Js.Dict.fromArray([
+  192 ┆     ("repo", Js.Json.string(`${e.repository.owner}/${e.repository.name
+      ┆ }`)),
+  193 ┆     ("action", Js.Json.string(e.action->Belt.Option.getWithDefault("")
+      ┆ )),
+  194 ┆   ]),
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:193:26-39
+
+  191 ┆   Js.Dict.fromArray([
+  192 ┆     ("repo", Js.Json.string(`${e.repository.owner}/${e.repository.name
+      ┆ }`)),
+  193 ┆     ("action", Js.Json.string(e.action->Belt.Option.getWithDefault("")
+      ┆ )),
+  194 ┆   ]),
+  195 ┆ ),
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:237:25-39
+
+  235 ┆ info(
+  236 ┆   `Posted PR comment`,
+  237 ┆   ~data=Js.Json.object_(
+  238 ┆     Js.Dict.fromArray([
+  239 ┆       ("pr", Js.Json.number(Belt.Int.toFloat(prNumber))),
+
+  deprecated: Js.Json.object_
+  Use `JSON.Encode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:238:21-37
+
+  236 ┆ `Posted PR comment`,
+  237 ┆ ~data=Js.Json.object_(
+  238 ┆   Js.Dict.fromArray([
+  239 ┆     ("pr", Js.Json.number(Belt.Int.toFloat(prNumber))),
+  240 ┆     ("commentId", Js.Json.number(Belt.Int.toFloat(commentId))),
+
+  deprecated: Js.Dict.fromArray
+  Use `Dict.fromArray` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:239:30-43
+
+  237 ┆ ~data=Js.Json.object_(
+  238 ┆   Js.Dict.fromArray([
+  239 ┆     ("pr", Js.Json.number(Belt.Int.toFloat(prNumber))),
+  240 ┆     ("commentId", Js.Json.number(Belt.Int.toFloat(commentId))),
+  241 ┆   ]),
+
+  deprecated: Js.Json.number
+  Use `JSON.Encode.float` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:240:37-50
+
+  238 ┆   Js.Dict.fromArray([
+  239 ┆     ("pr", Js.Json.number(Belt.Int.toFloat(prNumber))),
+  240 ┆     ("commentId", Js.Json.number(Belt.Int.toFloat(commentId))),
+  241 ┆   ]),
+  242 ┆ ),
+
+  deprecated: Js.Json.number
+  Use `JSON.Encode.float` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:251:23-36
+
+  249 ┆   info(
+  250 ┆     `GitHub App not configured, comment not posted: ${err}`,
+  251 ┆     ~data=Js.Json.string(comment),
+  252 ┆   )
+  253 ┆ }
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:257:22-36
+
+  255 ┆   }
+  256 ┆ 
+  257 ┆   jsonResponse(Js.Json.object_(Js.Dict.fromArray([("status", Js.Json.s
+      ┆ tring("processed"))])))
+  258 ┆ | None =>
+  259 ┆   error("Failed to parse GitHub event")
+
+  deprecated: Js.Json.object_
+  Use `JSON.Encode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:257:38-54
+
+  255 ┆   }
+  256 ┆ 
+  257 ┆   jsonResponse(Js.Json.object_(Js.Dict.fromArray([("status", Js.Json.s
+      ┆ tring("processed"))])))
+  258 ┆ | None =>
+  259 ┆   error("Failed to parse GitHub event")
+
+  deprecated: Js.Dict.fromArray
+  Use `Dict.fromArray` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:257:68-81
+
+  255 ┆   }
+  256 ┆ 
+  257 ┆   jsonResponse(Js.Json.object_(Js.Dict.fromArray([("status", Js.Json.s
+      ┆ tring("processed"))])))
+  258 ┆ | None =>
+  259 ┆   error("Failed to parse GitHub event")
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:269:12-20
+
+  267 │ let validateGitLabToken = (
+  268 │   config: config,
+  269 │   headers: Js.Dict.t<string>,
+  270 │ ): option<Http.response> => {
+  271 │   switch config.gitlabWebhookSecret {
+
+  deprecated: Js.Dict.t
+  Use `dict` directly instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:273:17-27
+
+  271 ┆ switch config.gitlabWebhookSecret {
+  272 ┆ | Some(secret) =>
+  273 ┆   let token = Js.Dict.get(headers, "x-gitlab-token")->Belt.Option.getW
+      ┆ ithDefault("")
+  274 ┆   if !Webhook.verifyGitLabToken(token, secret) {
+  275 ┆     error("Invalid GitLab webhook token")
+
+  deprecated: Js.Dict.get
+  Use `Dict.get` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:287:12-20
+
+  285 │ let handleGitLabWebhook = async (
+  286 │   config: config,
+  287 │   headers: Js.Dict.t<string>,
+  288 │   body: string,
+  289 │ ): Http.response => {
+
+  deprecated: Js.Dict.t
+  Use `dict` directly instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:297:12-27
+
+  295 ┆ // Parse payload
+  296 ┆ let parseResult = try {
+  297 ┆   Some(Js.Json.parseExn(body))
+  298 ┆ } catch {
+  299 ┆ | _ => None
+
+  deprecated: Js.Json.parseExn
+  Use `JSON.parseOrThrow` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:310:17-31
+
+  308 ┆ info(
+  309 ┆   `GitLab event: ${e.eventType}`,
+  310 ┆   ~data=Js.Json.object_(
+  311 ┆     Js.Dict.fromArray([("repo", Js.Json.string(`${e.repository.owner}/
+      ┆ ${e.repository.name}`))]),
+  312 ┆   ),
+
+  deprecated: Js.Json.object_
+  Use `JSON.Encode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:311:13-29
+
+  309 ┆   `GitLab event: ${e.eventType}`,
+  310 ┆   ~data=Js.Json.object_(
+  311 ┆     Js.Dict.fromArray([("repo", Js.Json.string(`${e.repository.owner}/
+      ┆ ${e.repository.name}`))]),
+  312 ┆   ),
+  313 ┆ )
+
+  deprecated: Js.Dict.fromArray
+  Use `Dict.fromArray` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:311:41-54
+
+  309 ┆   `GitLab event: ${e.eventType}`,
+  310 ┆   ~data=Js.Json.object_(
+  311 ┆     Js.Dict.fromArray([("repo", Js.Json.string(`${e.repository.owner}/
+      ┆ ${e.repository.name}`))]),
+  312 ┆   ),
+  313 ┆ )
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:329:84-97
+
+  327 ┆ | Ok(analysis) =>
+  328 ┆   let comment = Report.generatePRComment(analysis, config.mode)
+  329 ┆   info(`Generated MR comment for MR !${Belt.Int.toString(mrIid)}`, ~da
+      ┆ ta=Js.Json.string(comment))
+  330 ┆ | Error(err) =>
+  331 ┆   error(`Analysis failed: ${err}`)
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:334:57-70
+
+  332 ┆     let analysis = Analysis.mockAnalysis()
+  333 ┆     let comment = Report.generatePRComment(analysis, config.mode)
+  334 ┆     info(`Generated fallback MR comment`, ~data=Js.Json.string(comment
+      ┆ ))
+  335 ┆   }
+  336 ┆ }
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:338:22-36
+
+  336 ┆   }
+  337 ┆ 
+  338 ┆   jsonResponse(Js.Json.object_(Js.Dict.fromArray([("status", Js.Json.s
+      ┆ tring("processed"))])))
+  339 ┆ | None =>
+  340 ┆   error("Failed to parse GitLab event")
+
+  deprecated: Js.Json.object_
+  Use `JSON.Encode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:338:38-54
+
+  336 ┆   }
+  337 ┆ 
+  338 ┆   jsonResponse(Js.Json.object_(Js.Dict.fromArray([("status", Js.Json.s
+      ┆ tring("processed"))])))
+  339 ┆ | None =>
+  340 ┆   error("Failed to parse GitLab event")
+
+  deprecated: Js.Dict.fromArray
+  Use `Dict.fromArray` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:338:68-81
+
+  336 ┆   }
+  337 ┆ 
+  338 ┆   jsonResponse(Js.Json.object_(Js.Dict.fromArray([("status", Js.Json.s
+      ┆ tring("processed"))])))
+  339 ┆ | None =>
+  340 ┆   error("Failed to parse GitLab event")
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:352:16-37
+
+  350 ┆ let url = Http.url(req)
+  351 ┆ let method = Http.method_(req)
+  352 ┆ let path = Js.String2.replaceByRe(url, %re("/^https?:\/\/[^\/]+/"), ""
+      ┆ )
+  353 ┆ 
+  354 ┆ // Route requests
+
+  deprecated: Js.String2.replaceByRe
+  Use `String.replaceRegExp` instead
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:358:9-23
+
+  356 ┆ | ("GET", "/health") =>
+  357 ┆   jsonResponse(
+  358 ┆     Js.Json.object_(
+  359 ┆       Js.Dict.fromArray([
+  360 ┆         ("status", Js.Json.string("healthy")),
+
+  deprecated: Js.Json.object_
+  Use `JSON.Encode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:359:11-27
+
+  357 ┆ jsonResponse(
+  358 ┆   Js.Json.object_(
+  359 ┆     Js.Dict.fromArray([
+  360 ┆       ("status", Js.Json.string("healthy")),
+  361 ┆       ("mode", Js.Json.string(Config.modeToString(config.mode))),
+
+  deprecated: Js.Dict.fromArray
+  Use `Dict.fromArray` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:360:24-37
+
+  358 ┆ Js.Json.object_(
+  359 ┆   Js.Dict.fromArray([
+  360 ┆     ("status", Js.Json.string("healthy")),
+  361 ┆     ("mode", Js.Json.string(Config.modeToString(config.mode))),
+  362 ┆   ]),
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:361:22-35
+
+  359 ┆   Js.Dict.fromArray([
+  360 ┆     ("status", Js.Json.string("healthy")),
+  361 ┆     ("mode", Js.Json.string(Config.modeToString(config.mode))),
+  362 ┆   ]),
+  363 ┆ ),
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:379:9-23
+
+  377 ┆ // OpenTelemetry metrics endpoint
+  378 ┆ jsonResponse(
+  379 ┆   Js.Json.object_(
+  380 ┆     Js.Dict.fromArray([
+  381 ┆       ("oikos_bot_requests_total", Js.Json.number(0.0)),
+
+  deprecated: Js.Json.object_
+  Use `JSON.Encode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:380:11-27
+
+  378 ┆ jsonResponse(
+  379 ┆   Js.Json.object_(
+  380 ┆     Js.Dict.fromArray([
+  381 ┆       ("oikos_bot_requests_total", Js.Json.number(0.0)),
+  382 ┆       ("oikos_bot_analyses_total", Js.Json.number(0.0)),
+
+  deprecated: Js.Dict.fromArray
+  Use `Dict.fromArray` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:381:42-55
+
+  379 ┆ Js.Json.object_(
+  380 ┆   Js.Dict.fromArray([
+  381 ┆     ("oikos_bot_requests_total", Js.Json.number(0.0)),
+  382 ┆     ("oikos_bot_analyses_total", Js.Json.number(0.0)),
+  383 ┆   ]),
+
+  deprecated: Js.Json.number
+  Use `JSON.Encode.float` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:382:42-55
+
+  380 ┆   Js.Dict.fromArray([
+  381 ┆     ("oikos_bot_requests_total", Js.Json.number(0.0)),
+  382 ┆     ("oikos_bot_analyses_total", Js.Json.number(0.0)),
+  383 ┆   ]),
+  384 ┆ ),
+
+  deprecated: Js.Json.number
+  Use `JSON.Encode.float` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:398:13-27
+
+  396 ┆ info(
+  397 ┆   `Starting Oikos Bot`,
+  398 ┆   ~data=Js.Json.object_(
+  399 ┆     Js.Dict.fromArray([
+  400 ┆       ("port", Js.Json.number(Belt.Int.toFloat(config.port))),
+
+  deprecated: Js.Json.object_
+  Use `JSON.Encode.object` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:399:9-25
+
+  397 ┆ `Starting Oikos Bot`,
+  398 ┆ ~data=Js.Json.object_(
+  399 ┆   Js.Dict.fromArray([
+  400 ┆     ("port", Js.Json.number(Belt.Int.toFloat(config.port))),
+  401 ┆     ("mode", Js.Json.string(Config.modeToString(config.mode))),
+
+  deprecated: Js.Dict.fromArray
+  Use `Dict.fromArray` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:400:20-33
+
+  398 ┆ ~data=Js.Json.object_(
+  399 ┆   Js.Dict.fromArray([
+  400 ┆     ("port", Js.Json.number(Belt.Int.toFloat(config.port))),
+  401 ┆     ("mode", Js.Json.string(Config.modeToString(config.mode))),
+  402 ┆   ]),
+
+  deprecated: Js.Json.number
+  Use `JSON.Encode.float` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+
+  Warning number 3
+  /var/mnt/eclipse/repos/sustainabot/bot-integration/src/Main.res:401:20-33
+
+  399 ┆   Js.Dict.fromArray([
+  400 ┆     ("port", Js.Json.number(Belt.Int.toFloat(config.port))),
+  401 ┆     ("mode", Js.Json.string(Config.modeToString(config.mode))),
+  402 ┆   ]),
+  403 ┆ ),
+
+  deprecated: Js.Json.string
+  Use `JSON.Encode.string` instead.
+
+  This can be automatically migrated by the ReScript migration tool. Run `rescript-tools migrate-all <project-root>` to run all automatic migrations available in your project, or `rescript-tools migrate <file>` to migrate a single file.
+
+#Done(1770426379321)
